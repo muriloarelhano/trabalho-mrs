@@ -14,9 +14,6 @@ class GitterScraper:
         acc_last_response_length = 0
         have_more_messages = True
         
-        if limit < total_messages:
-            raise ValueError("total_messages number must be grater than limit")
-
         while (count <= math.ceil(total_messages / limit)) and have_more_messages:
             response = requests.get(
                 f"{self.base_url}/rooms/{self.room_id}/chatMessages",
