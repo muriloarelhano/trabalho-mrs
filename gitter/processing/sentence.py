@@ -2,7 +2,6 @@ import re
 import numpy as np
 import pandas as pd
 from textblob import TextBlob
-from bs4 import BeautifulSoup
 from spacy.lang.en import English
 from spacy.lang.en.stop_words import STOP_WORDS
 
@@ -46,8 +45,6 @@ def remove_stop_words(text):
     token_list = []
     for token in my_doc:
         token_list.append(token.text)
-
-    from spacy.lang.en.stop_words import STOP_WORDS
 
     filtered_sentence =[] 
 

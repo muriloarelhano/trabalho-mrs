@@ -11,7 +11,7 @@ try:
     scraper = GitterScraper(
         "62fe76c279230fbd70415c924fef5d1b26f1aec7", "555f74e315522ed4b3e0ce42"
     )
-    messages = scraper.get_messages(5, 5)
+    messages = scraper.get_messages(100, 1000)
 
 except ValueError:
     print(f'Error with gitter API')
@@ -33,7 +33,7 @@ messages_df = apply_sentence_correction(messages_df)
 
 messages_df.reset_index(drop=True, inplace=True)
 
-messages_df
+# messages_df.to_csv('./database.csv', index=False)
 
 #%%
 
@@ -42,5 +42,6 @@ for i, row in messages_df.iterrows():
     messages_df.at[i, "sentiment"] = sentence.sentiment.classification
     messages_df.at[i, "pos"] = sentence.sentiment.p_pos
     messages_df.at[i, "neg"] = sentence.sentiment.p_neg
+    print(messages_df[i])
 
 messages_df.head()

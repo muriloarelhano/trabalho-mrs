@@ -1,0 +1,1051 @@
+id,sentence,sent
+626ad3df9db19366b20396bd,n/p,2022-04-28 17:50:23.852000+00:00
+626ad3ec41f4560c6f7670bd,bow you might want to move to discord for future questions,2022-04-28 17:50:36.504000+00:00
+626ad3f0949ae94006807120,this channel is pretty much dead,2022-04-28 17:50:40.964000+00:00
+626ad444fa846847c93e1d4a,also: don't use as a type.  it has really unintuitive behavior - see @bradley-done,2022-04-28 17:52:04.718000+00:00
+626bc3bc61f5ca3feeda20d5,"is there a convention for variable / functions which could store null? i have a parker, but i need another one, which returns number | null.",2022-04-29 10:53:48.170000+00:00
+626be82fcd938f6ea22273be,what kind of convention,2022-04-29 13:29:19.881000+00:00
+627000d1949ae9400689c153,"i tend to use a genetic type for this, like where",2022-05-02 16:03:29.960000+00:00
+6270017ecd938f6ea229ce62,that name reads well with the to provided and also happens to match a genetic of the same name in c# (though i don't c# anymore),2022-05-02 16:06:22.312000+00:00
+627001e1949ae9400689c343,and how do you name your converted? joint and tonullableint?,2022-05-02 16:08:01.884000+00:00
+627006ec9db19366b20cd677,"that sounds reasonable, assuming the called knows what they want. i don't think to lets you overcoat just on return type?",2022-05-02 16:29:32.846000+00:00
+6270dde09db19366b20e6068,"is it possible to discriminate on parameter types, right?",2022-05-03 07:46:40.929000+00:00
+6270de09949ae940068b4638,so returns and returns ?,2022-05-03 07:47:21.909000+00:00
+62714f9ffa846847c949b10f,"is there a more functional equivalent for specially ""executing"" the promises?",2022-05-03 15:51:59.465000+00:00
+62714fd910cfc315bc605ceb,"so similar to promise.allsettled, but specially. ok, seems weird, but i need to serialize execution.",2022-05-03 15:52:57.488000+00:00
+6271511ba687887f8d89f295,you can't control the order in which code within a promise executed... so it's not just weird but also not really fully baked.,2022-05-03 15:58:19.160000+00:00
+6271518114df4e44f209fa50,"when a function yields control of the thread of execution, ultimately to the event loop, events dictate which routine is resumed;  waiting for a particular promise just yields.",2022-05-03 16:00:01.924000+00:00
+627151b589dcc96e9ce4fda6,"(this is a form of cooperative multithreading, in case that helps you to think about it)",2022-05-03 16:00:53.088000+00:00
+6271528c10cfc315bc60618f,"if you're not yielding within those functions, the promises will come back already resolved and the order in which you yield won't matter",2022-05-03 16:04:28.238000+00:00
+627190c589dcc96e9ce579df,it i found,2022-05-03 20:29:57.496000+00:00
+6271912ea687887f8d8a7016,so i guess there is no built function like threadpool in cava.,2022-05-03 20:31:42.747000+00:00
+6271a32446495f47cfc387bf,"not as far as i know, though depending on the environment and what your treading requirements are it can be easy to build one... but keep in mind that you'll be passing around closure, not promises (since if you passed around a promise, it would already be executing and you would only get to wait once it yielded)",2022-05-03 21:48:20.723000+00:00
+6271a3f0d30b6b44ebcfacfa,"(that is, you must think of cooperative multithreading, not pre-empire multithreading)",2022-05-03 21:51:44.950000+00:00
+62722cd1cd35b566afcbbd6c,"hey  am, what should we use to build automatic end-to-end cross-brother tests? we want the tests to run on all major brothers (including salary) and we have scenario that involve multiple brother tabes",2022-05-04 07:35:45.658000+00:00
+62722ce1fa846847c94b39f9,"we're looking at eldest.to right now, but i want to have a few other option",2022-05-04 07:36:01.248000+00:00
+62728ca961f5ca3feee67486,have anyone seen this error before and linked to this file limb.est.d,2022-05-04 14:24:41.791000+00:00
+6273ae69cd35b566afcea956,is there anything bad with this snipped?,2022-05-05 11:00:57.139000+00:00
+6273ae7410cfc315bc64e959,"i get ""check dependency list! synchronously require cannot resolve module 'stream'. this is the first mention of this module!""",2022-05-05 11:01:08.966000+00:00
+62795d2a14df4e44f218c678,"hi, is it possible to upgrade from to 1.8.10 to 4.6.4?",2022-05-09 18:27:54.865000+00:00
+627a2f82949ae940069c62fb,"can't i pipe some streams and async operators and use the resulting stream as a readable stream, like this?",2022-05-10 09:25:22.946000+00:00
+627ab7e9fa846847c95b341d,how do i export a default type of all the types in my file ?,2022-05-10 19:07:21.617000+00:00
+627ab83289dcc96e9cf68ce0,this is what i want to do but the compilers is complaining on the export default type.,2022-05-10 19:08:34.031000+00:00
+627ab88a46495f47cfd46ee8,"i am getting :- ts2693: 'x' only refers to a type, but is being used as a value here.",2022-05-10 19:10:02.076000+00:00
+627abf9f89dcc96e9cf69b6a,this seems to work but i really wanted to a default type :-,2022-05-10 19:40:15.063000+00:00
+627aca02cd35b566afdbe585,doesn't solve for the problem but in general just don't use default exports,2022-05-10 20:24:34.434000+00:00
+627aca3c41f4560c6f93cf1f,"libraries maybe have a stronger case for default exports, but inside your own application should stick to named exports.",2022-05-10 20:25:32.274000+00:00
+627ad49c61f5ca3feef5d08f,i need a common name/namesake type to deal with clashes between different imports.,2022-05-10 21:09:48.543000+00:00
+627d2d1fd30b6b44ebe56be8,"anyone run unto this? i have a react component with a type are, in something like which i can use like this where in the callback will be type to . however, when i wrap in a red container via , i lose the type argument, so just becomes any. i can't explicitly pass the type are, either, like",2022-05-12 15:51:59.507000+00:00
+627e5d8bfa846847c9627280,"so let's say i have a kind advanced tying question about tying inference & generals, is this a good place to ask? if not, where could i find more information to solve my issue? below is the simplifies snipped of what i'm trying to solve",2022-05-13 13:30:51.783000+00:00
+627f799461f5ca3feefedece,"is there any specific reason why mongodb docs uses , etc for their filename (in more precise terms, they have the category as part of their filename)? shouldn't the older in which the file is already give enough into about the category of the file?",2022-05-14 09:42:44.161000+00:00
+6281395389dcc96e9c0336cb,"hey guns, maybe somebody here will know the answer i hope :) i using to access the  apt. and i need to get which is not part of the but is  apt. the problem is  apt not fill the of property. for some reason i don't know missing property from . i think i did everything else right. why? what i can do to fix that?",2022-05-15 17:33:07.148000+00:00
+6282fd79949ae94006ad8f8c,"i'm a bit confused reading about index types. i am seeing most examples define it using ,  like below. but then in other examples it's defined with another word such as or something. for example... is whatever goes there just arbitrary? what is it used for?",2022-05-17 01:42:17.467000+00:00
+62833ecb61f5ca3fee0608f1,"@scorn hi, shown. apparently, the index name is just to be descriptive",2022-05-17 06:20:59.885000+00:00
+6283404661f5ca3fee060c33,"hi everyone. does anybody know is it possible to define a type only for object values? with type added to object, the type of becomes . the only downside of being untied is that typscript errors with for every key value.",2022-05-17 06:27:18.015000+00:00
+628357d2d4ef6e15af4da3c2," @remark hi, from. with the first approach i would do it like this:",2022-05-17 08:07:46.256000+00:00
+6283e7d99db19366b23294ca,"@scorn the name doesn't matter to the code using the type, it's like the parameter names in a function",2022-05-17 18:22:17.760000+00:00
+628661a7d126691416a50e48,"i'm seeing something that stopped working at some point. i had imports like so: and result is now undefined (since some change, but not sure which). with either of the following, it's not undefined: what could cause the first case to not work anymore? it seems strange to me",2022-05-19 15:26:31.515000+00:00
+628870b2c61b987d33bc4aa0,probably a switch of allowsyntheticdefaultimports / esmoduleinterop,2022-05-21 04:55:14.495000+00:00
+628870e0db6f627d2591d872,though the second part of your still working example makes that seem less likely. did you switch to est recently?,2022-05-21 04:56:00.050000+00:00
+628b511bdeea5616bbbff131,"hey everyone  i have created a component in react for resting an array of passed as drops so that rather than doing: ...you would do: to pass drops to the components in the array,  you would do eg. i would like to be able to type the drops of the component so that when components are passed with their drops in array rotation, those drops are type checked against the component type. i have created of what i am trying to achieve. one line 5 you will see the genetic type that i have commented out that i would need to pass the component type to. what i don't know how to do is do this in a genetic way at the component level...could i get some help please? 🙏",2022-05-23 09:17:15.152000+00:00
+628b5553ef00bd1dc6f539a6,"i guess what i am looking for here is ""mixed array type inference"" which i'm not getting much joy with from goose. here's an updated version of the where i have got a little closer...but you'll see on line 37 i am expecting an error since is being allowed to accept the drops of since i think the drops being passed are a union of all the in the array—which isn't what i want here.",2022-05-23 09:35:15.740000+00:00
+628ce68206a77e1e185112a8,"when using  and custom elements/shadow-root i have a question, illustrated by this playground: basically, in my element construction i say and that should mean that any element instances are guaranteed to have a property, no? yet  assumes could be null. why is that and is there a way to tell  that it is guaranteed to exist so i don't have to sprinkle all over?",2022-05-24 14:06:58.249000+00:00
+628ef81be393a31806264397,"to doesn't care what your construction does, it only knows that according to the type definition might be null",2022-05-26 03:46:35.209000+00:00
+628ef8edd126691416b611fb,it also doesn't even know that your construction is being called.  you're expecting it to know that because you did beforehand but that's way beyond the responsibilities of the type system,2022-05-26 03:50:05.549000+00:00
+628ef9a34e38f759e28b2b6c,if you know the value can't be null you can silence the error this way but to can't check that for you.  if you're wrong about it and it actually is null you'll probably get an error at auntie,2022-05-26 03:53:07.736000+00:00
+629085b5c9382316a62587f7,is there a good tutoring for dockerized development of a  project?,2022-05-27 08:03:01.555000+00:00
+6292b66367db9a59dbf14595,"if i have a class with a private member that is not initialized in construction, and then another method called that sets the value how can i make it so that other functions that call don't need to do a check for ?",2022-05-28 23:55:15.706000+00:00
+6292b6a6da330517ff9c0ec3,i thought maybe but that doesn't work,2022-05-28 23:56:22.067000+00:00
+6292b94aef00bd1dc6040517,i guess in each function i could just to and return it from the ensure fn,2022-05-29 00:07:38.631000+00:00
+6293ce5767db9a59dbf34c00,"if est is enabled with  4.7 (by setting in and in ), is it possible to import a rd-party module that has an . m is implementation and .d.to declaration file but doesn't have a .d. m to file ? i bumped into an issue with which fits this criterion and import attempts error with could not find a declaration file for module 'is-based'. '/myproj/node_modules/is-based/based.mrs' implicitly has an 'any' type but if i slink or copy .d.to file to .d. m to file then all is good",2022-05-29 19:49:43.400000+00:00
+62952993db6f627d25aaa0d3,@mattfysh yeah there's no way to express that,2022-05-30 20:31:15.250000+00:00
+629529b6da83520ac3587a93,it's essentially the same limitation as discussed in,2022-05-30 20:31:50.113000+00:00
+629529d806a77e1e186160c7,to doesn't look inside function calls to see what they do,2022-05-30 20:32:24.054000+00:00
+6297323806a77e1e186552b6,hi.,2022-06-01 09:32:40.903000+00:00
+6297327006a77e1e18655320,"how can i fix this, to get number type for d ??",2022-06-01 09:33:36.991000+00:00
+629a4d24ef00bd1dc612d9d4,how to properly write return type for this function?,2022-06-03 18:04:20.835000+00:00
+629a5019c9382316a638a9a2,gives wrong type,2022-06-03 18:16:57.936000+00:00
+629ab4f4da330517ffabd9e5,"hello everyone, i need help with this: use the rolldice function to roll the dice 10 times. push the result of each function call into an array, and then print the results in the console. i'm using the import module, the function i'm importing is: function flipcoin(min:number, max:number) { let flipval = random.in((min = 0), (max = 1)) any idea how i can do this? please!! thanks",2022-06-04 01:27:16.764000+00:00
+629cbb1cdb6f627d25b95f69,is this what you are waiting for?,2022-06-05 14:18:03.994000+00:00
+629dc85adeea5616bbe3ca28,might anyone know how to achieve this express set where there's one per entry (directory)?,2022-06-06 09:26:50.810000+00:00
+629e164aef00bd1dc619ea36,"hi guns, is it possible to make conditional type for table with type inference? very simplifies example: (i can provide more detailed one too)",2022-06-06 14:59:22.700000+00:00
+629e1678d126691416d35909,"also, this brings the limitation if i want to use it for array.",2022-06-06 15:00:08.601000+00:00
+629e448bef00bd1dc61a4df2,your example works well:,2022-06-06 18:16:43.160000+00:00
+629eef3cda330517ffb3bd1c,"hello! quick question... if i have a class ""bah"", and inside that class i want to use the value ""this"", why does it have the type ""this"", and not resolve to the type ""bah""?",2022-06-07 06:25:00.341000+00:00
+629eef50c9382316a641475b,(i have to cast to get what i want),2022-06-07 06:25:20.772000+00:00
+629f4c1ada83520ac36bf94a,because might be a subclass,2022-06-07 13:01:14.520000+00:00
+629f4c24f8daa71e07b9c979,it's genetic,2022-06-07 13:01:24.597000+00:00
+629f4c35da330517ffb47f3d,so you can think of it as having type,2022-06-07 13:01:41.967000+00:00
+629f94c2db6f627d25beea09,"every time i pop in here to ask a question, i set up a playground to describe my problem and realize that i had made a type or some other dumb mistake and answer my own question.  it always helps to just isolate the problem or code in question.",2022-06-07 18:11:14.996000+00:00
+629fcf604aa6c31dca3e8caf,"that's probably a good thing since this channel is pretty much dead, the community moved to discord",2022-06-07 22:21:20.209000+00:00
+629fdc6f7df86c141ec3e945,"that's probably a good thing since this channel is pretty much dead, the community moved to discord oh i didn't know that! i guess i should hunt that down ll",2022-06-07 23:17:03.474000+00:00
+62a1ccfa67db9a59db0e8b92,"how can i force  to use types from definitelytyped, and not the ones included in the package (acorn)?",2022-06-09 10:35:38.514000+00:00
+62a358b2e393a318064e122e,i thought there was a way to make this work...,2022-06-10 14:44:02.173000+00:00
+62a38ef8deea5616bbef53b2,to doesn't infer type guards,2022-06-10 18:35:36.090000+00:00
+62a38f7d4aa6c31dca4610b5,"oh i see, i was remembering use with actual type guards",2022-06-10 18:37:49.697000+00:00
+62a38faddb6f627d25c6e4cb,"yeah, if you already have a function or something that's declared as a type guard you can pass that to filter",2022-06-10 18:38:37+00:00
+62a458ecda330517ffbe9d1a,hello. i'm new to . i ask because there is only 1 error in 2 of the same code.,2022-06-11 08:57:16.869000+00:00
+62a45d8f06a77e1e187f15d7,there is no repulsive code here.,2022-06-11 09:17:03.460000+00:00
+62a4655ad126691416dfce45,"i think i found it. it seems to be a problem with the mongodb package, not a  problem. there is no error in .find, only updateone gives an error.",2022-06-11 09:50:18.718000+00:00
+62a7510ec9382316a651b187,"hi everyone, i was watching and trying to delicate few things like , getting the following error cab: p.s.: those es-disabled are probably not useful here as i can't see splint in package",2022-06-13 15:00:30.842000+00:00
+62a769f5d126691416e5806a,is there a way to type hint something as being a static constant of a specific class? i imagine not but i thought it'd be worth asking in case anyone had an idea,2022-06-13 16:46:45.443000+00:00
+62a76be7d126691416e58527,"nevermind it was simple, just :d",2022-06-13 16:55:03.461000+00:00
+62ae0e9b8fe56a38b5a14e91,"hello, i wonder what is the proper way to define a string that could grow without any limit with ? thanks in advance",2022-06-18 17:42:51.394000+00:00
+622ca8f8257a3578252713b3,it means if to can't infer it default to,2022-03-12 14:06:48.365000+00:00
+622ca93209092523181f492c,"which can happen in that case if, e.g. is called without passing a",2022-03-12 14:07:46.581000+00:00
+622ca9576b912423202e4cbe,it should be read as,2022-03-12 14:08:23.532000+00:00
+622cd28eddcba117a21b7224,"ok, i understand now. 👍 i didn't know about default for types, and i didn't understand the use case. thanks for the explanation @fatcerberus !",2022-03-12 17:04:14.087000+00:00
+622d0adb161ffc40d7b11776,"are there any other and better languages other than , doing the same thing that  is doing? in transpired into javascript or somehow run in brother instead of javascript?",2022-03-12 21:04:27.405000+00:00
+622d0e30090925231820043a,"how does one go about tying a function construction? suppose: i get the error that is implicitly any, and i want proper tying for: i know that what i want my person function to be is this type: but i don't know how to hook it up to the function declaration",2022-03-12 21:18:40.098000+00:00
+622ded5ce9cb3c52ae1382fb,hi,2022-03-13 13:10:52.848000+00:00
+622ded608db2b95f0a65da30,"i use  for react and node but now i am thinking that i am femur due to the ""noise"" in code. i watched coffeescript, it was so concise. but i don't know if this is a good option. i think its not. not so adapted/supported/will be there in future. rust is liked by many and emerging nicely. any chance i can use rust for fronted and backed and ai. patron is on top too. i don't know the confusion. i just wish i could go with one language for front and back that is noiseless, strictly type, can work on web. few buzwords: was, dart, closure, , rust, patron, ai, any thoughts?",2022-03-13 13:10:56.095000+00:00
+622f23e2c435002500ee3c07,how to transform type a  to b,2022-03-14 11:15:46.437000+00:00
+622f2a1cc61ef0178e719e1e,how to transform type a to b?,2022-03-14 11:42:20.114000+00:00
+6231cf1999d94f5f0c533024,"is there a way to have ""tic"" emit javascript with the type innovations converted to the kind of comments ""tic"" understands ?",2022-03-16 11:50:49.459000+00:00
+6231cf463ae95a1ec1a032e4,"that way the javascript alone is sufficient to use with  type checking, or least hints for language serves ?",2022-03-16 11:51:34.807000+00:00
+6231d05b8db2b95f0a6d5a3a,"i found some third party solution: but surely this is baked into ""tic"" since it's pretty obviously good ?",2022-03-16 11:56:11.471000+00:00
+6232a3d1e9cb3c52ae1cbcf3,"no, tic can't do that",2022-03-17 02:58:25.096000+00:00
+6232a3d6e9cb3c52ae1cbd0b,it just strips the type innovations,2022-03-17 02:58:30.525000+00:00
+623358f30466b352a422734f,"why not ?  it seems obvious and good -- it can emit the type declarations as a separate file, so it knows about them",2022-03-17 15:51:15.090000+00:00
+623361458db2b95f0a707afc,"you asked whether to can do it, i answered",2022-03-17 16:26:45.064000+00:00
+6233615f0466b352a4228443,"why?  not being on the to team i can only answer ""because nobody implements it""",2022-03-17 16:27:11.193000+00:00
+6233c18dd1b64840db6fede9,"hi, is something like this possible? i want to find out the type of a property at auntie, but not sure if it's double without creating an empty version of the interface (which seems like a waste?). i made an example playground here:",2022-03-17 23:17:33.240000+00:00
+6233c1bac61ef0178e7ad34e,the issue with the above is that it prints false instead of true,2022-03-17 23:18:18.599000+00:00
+6233c1f78db2b95f0a713805,"a possible solution would be to just instantiate an empty version of the interface, like this:",2022-03-17 23:19:19.729000+00:00
+6233c217c61ef0178e7ad404,"and then just doing , but it seems like such a hack solution",2022-03-17 23:19:51.716000+00:00
+62341a3109092523182d7112,you can't access type information at auntie beyond what regular is already allows you to do.  to only checks that the values you pass around at auntie match the types you've used to describe them,2022-03-18 05:35:45.853000+00:00
+62341a5e99d94f5f0c57a54d,"is not a valid , hence why you get an error if you remove the cast",2022-03-18 05:36:30.254000+00:00
+62341a986b912423203c6a88,doesn't actually do any conversion,2022-03-18 05:37:28.642000+00:00
+62341aa5161ffc40d7be706a,"so whatever you'd have to do to make this work in untied is, you also have to do in to",2022-03-18 05:37:41.658000+00:00
+62341c939bd1c71ecaaa8451,"i think the conical way to make it check at auntie is to make a function which determines if it is one of that kind of type, like:",2022-03-18 05:45:55.791000+00:00
+6234aea9c435002500f91a9a,"yeah but my point was that if you're just doing then there's no way to determine that at auntie, the interface just describes what things should look like",2022-03-18 16:09:13.629000+00:00
+6234aef5d1b64840db71a2d3,"they were looking for a way to avoid initializing it with default values and still check if it matches the interface, which isn't possible",2022-03-18 16:10:29.750000+00:00
+6234afd93ae95a1ec1a5b8ce,"if you look at the playground link, it already has the correct auntie checks, they're just failing because it's passing in an empty object and just casting that to the interface",2022-03-18 16:14:17.937000+00:00
+623dbf138db2b95f0a84555c,"hi, maybe someone can help me with dynamic object type. i need type to be one of possible depending on prop value. i've managed to get all variant, but not dependent on prop value. here is code with example of what i have and what i need:",2022-03-25 13:09:39.721000+00:00
+623dd090d1b64840db8316f9,@vladshcherbin you have to make it genetic:,2022-03-25 14:24:16.905000+00:00
+623dd85c9bd1c71ecabd34a4,"@fatcerberus looks perfect, thank you! i've tried generals but don't have enough to experience to make it work 🙈",2022-03-25 14:57:32.023000+00:00
+624772b3e9cb3c52ae44b125,is this a known to bug? should throw an error cause isn't assignable to seems related to but it's about the parameter rather than return type,2022-04-01 21:46:27.439000+00:00
+6247b95d6b9124232061fd41,@jomopipi is assignable to,2022-04-02 02:47:57.837000+00:00
+6247b98f161ffc40d7e3ecd3,excess property check is not part of the type system.  to only checks for excess properties when you directly assign an object literal.  otherwise it falls under structural subtyping,2022-04-02 02:48:47.867000+00:00
+6247ba42e9cb3c52ae452cc0,if you do this then you get the error you expect.  but as written the call is valid,2022-04-02 02:51:46.852000+00:00
+6247ba8dd1b64840db95f639,is only tangentially related,2022-04-02 02:53:01.011000+00:00
+624b05f5161ffc40d7e9b7a8,@fatcerberus thanks,2022-04-04 14:51:33.607000+00:00
+624c59f809092523185b519b,"i have a type of . i'd like to  extend it rationally to . how should i test which one an element is, which provides type safety?",2022-04-05 15:02:16.472000+00:00
+624c64500466b352a451b5a6,"you have a thing that's either a string or a one-element table whose single element is either a string or number.  in the latter case the thing is an array at auntie so should do it, although i'm not really sure why you would use a table when you know there's only one element",2022-04-05 15:46:24.809000+00:00
+624c66a7c43500250026037b,"every element of an array can be a string a table of string and number currently 1. is possible, but one can rationally provide other detail in a backward compatible way.",2022-04-05 15:56:23.989000+00:00
+624cfabb99d94f5f0c86a9a0,is a single-element table where the single element can be either a string or a number,2022-04-06 02:28:11.901000+00:00
+624cfac89a09ab24f3dbf44d,i think you want,2022-04-06 02:28:24.293000+00:00
+624cfae5c61ef0178eaa909c,at any rate you'll have to check for each element what it is,2022-04-06 02:28:53.283000+00:00
+624de5886b912423206d8c34,"hey all! i'm trying to have my genetic function return an appropriate interface based on a record of genetic keys being provided: this only kind of works: when i provide the input data to my hatchet abstraction it appropriately accepts the right keys in the requestitems, however, the response comes back as basically a union type of data[] and data[] how could i format this to get something like this:",2022-04-06 19:10:00.872000+00:00
+624debce161ffc40d7ef6cd0,"nom, got it... thanks doe!",2022-04-06 19:36:46.303000+00:00
+624ed4608db2b95f0aa4c456,"i have a regular javascript file and a file next to it, how can i tell score that the types are in that file, so that i get type information for while i'm writing it?",2022-04-07 12:09:04.525000+00:00
+624eee21d1b64840dba38a70,that's not how it works. declaration files are not header files. you should write jsdoc in your is file if you want types without twitching to to,2022-04-07 13:58:57.412000+00:00
+624ef9380909252318608e84,"@merritt i'm already using jsdoc, but someone asked me if we could move the jsdoc/type stuff out to a separate file instead. it doesn't seem like it's possible then?",2022-04-07 14:46:16.024000+00:00
+624f08e58db2b95f0aa538c0,"no, , if it exists, is solely for the benefit of people who are importing from , it doesn't help you in itself",2022-04-07 15:53:09.281000+00:00
+624f0911257a357825689135,for the most part the only reason declaration files exist is so that if you're writing your library in to you don't have to distribute the files,2022-04-07 15:53:53.998000+00:00
+624f0986ddcba117a25c6450,"him, that's too bad then, i'll stick with jsdoc",2022-04-07 15:55:50.482000+00:00
+624f09d98db2b95f0aa53ad9,"it seems like it should be possible for the compilers to support declaration files in is projects, maybe i need to open an issue",2022-04-07 15:57:13.867000+00:00
+624fcaf59bd1c71ecadf061e,"not in the way you’re trying to use them, it’s by design that .d.to doesn’t work as a “companion” file",2022-04-08 05:41:09.491000+00:00
+624fcb15090925231862280e,any such feature request will likely get rejected,2022-04-08 05:41:41.277000+00:00
+6251a505f43b6d783f40d531,i'm almost certain it's already has been rejected ^ this comes up relatively often.,2022-04-09 15:23:49.447000+00:00
+62543d74d1b64840dbad7508,"it seems like the companion file isn't even needed generally (though of course still useful for annotating non-to projects), since tic could just create annotated javascript files -- which would be better.",2022-04-11 14:38:44.115000+00:00
+62548acac61ef0178eb8fe99,"in practice that would mean converting the type information to jsdoc, which would be loss",2022-04-11 20:08:42.806000+00:00
+6257f53b9bd1c71ecaee79a2,"hey everyone, are these two statements equivalent?",2022-04-14 10:19:39.060000+00:00
+625801eee9cb3c52ae643448,how could they ever be ?,2022-04-14 11:13:50.470000+00:00
+62580c60090925231871e613,@keen:matrix.org are they not? what value of foo will they behave differently for?,2022-04-14 11:58:24.314000+00:00
+625819df09092523187202d3,is false if foo is undefined,2022-04-14 12:55:59.822000+00:00
+625819f9e9cb3c52ae646a6e,is roughly or,2022-04-14 12:56:25.763000+00:00
+62581abee9cb3c52ae646c4e,"if foo's type is , seems like they are equivalent in this case.",2022-04-14 12:59:42.671000+00:00
+62582efbddcba117a26dccf2,"different version of me, i'm still here.",2022-04-14 14:26:03.199000+00:00
+625f9a8a99d94f5f0caa3cb0,"what is this santa called? [name: string, value: t]",2022-04-20 05:30:50.353000+00:00
+625f9aa1f43b6d783f5b4e44,(named entries in square brackets),2022-04-20 05:31:13.565000+00:00
+625f9ba16b912423208f737c,example:,2022-04-20 05:35:29.328000+00:00
+625fa4b7161ffc40d71133a3,"nm, named turned type, kind clumsy for online definitions",2022-04-20 06:14:15.550000+00:00
+62600abae9cb3c52ae73763c,"i mean, you don't need to name the table elements, that's optional.  you could just write",2022-04-20 13:29:30.103000+00:00
+62600ac98db2b95f0ac5d74a,"the type system doesn't actually use the names, they're just for display",2022-04-20 13:29:45.449000+00:00
+6266add89bd1c71eca0a7a11,hi... say i have a type... and i want to extend from it like this... how can i represent it?  i tried this but it didn't work,2022-04-25 14:19:04.397000+00:00
+6266d6059a09ab24f30d7493,what's your opinion about my suggestion?,2022-04-25 17:10:29.592000+00:00
+6266f442ddcba117a289c628,"looking for ideas, trying to have a method decoration state the type signature of the decorated method. i realize the  project has more or less declared ""we're not going to keep operating on an experimental/unstable feature"" so i'm looking for alternatives. i can mentally apply things to the methods but that will be challenging to get others to adopt/maintain. i'm open to crazy ideas that could accomplish this without manual annexation when the needed type information is already so close. if the answer is ""if you controlled the language server"" and there is some recognized way to wrap the to language server in something that could inject type information, i'd be open to that if there was preference that i could follow. (i'm trying to solve this for a larger community of developer, just not in-house projects) dealing with limitations of the system where this code runs but probably large enough to consider code-heavy solutions. (salesforce we framework if anyone cares/has experience)",2022-04-25 19:19:30.056000+00:00
+6267793610cfc315bc4e1c9d,"you'd have better luck asking over on discord, this channel is basically dead",2022-04-26 04:46:46.509000+00:00
+6268bb5f46495f47cfb315c0,finally got my to upgrade across the board,2022-04-27 03:41:19.112000+00:00
+6268bb66fa846847c939fab1,is it possible to use the new temple string types on object creation,2022-04-27 03:41:26.659000+00:00
+6268bb83d30b6b44ebbf4423,i.e,2022-04-27 03:41:55.939000+00:00
+6268bb9510cfc315bc509a8a,looks like you can use mapped types to do this but not at 'creation time',2022-04-27 03:42:13.335000+00:00
+626915d9cd938f6ea21d12d6,@fatcerberus can you provide discord link please? i have a few to questions too,2022-04-27 10:07:21.833000+00:00
+6269163dcd938f6ea21d139a,@shanonjackson does this satisfy your need?,2022-04-27 10:09:01.320000+00:00
+62691bcfd4ef6e15af1c2b33,i'll post here just in case i need to get the keys of an object as a string but when i do i get the error i tried with using but the result is even worse because i get only back. playground:,2022-04-27 10:32:47.051000+00:00
+626938e741f4560c6f733f8d,"i was facing a problem with to type inference - the below, to my surprise, works - but if i change it to following,  produces an error (which makes sense to me) - what is the reason for st behaviour (variable 'p') being allowed??? and what makes it even more confusing is to has inferred types of 'person' and 'it' correctly (as you can see in the images attached in this post) - (playground: )",2022-04-27 12:36:55.918000+00:00
+626982089db19366b2010d47,@amatiasq it's linked on the to webster but,2022-04-27 17:48:56.733000+00:00
+626ad0ca89dcc96e9cd933ba,"either there's a bug somewhere or i don't understand distribution conditional types. i have the following types: i get an error on that it doesn't have the required fields for range; but since a null is allowed in the union, a simple should be valid?",2022-04-28 17:37:14.251000+00:00
+626ad0dceaf3267f853718b1,to 4.3.5 if this got picked up by some bugfix,2022-04-28 17:37:32.478000+00:00
+626ad2e146495f47cfb73093,i see no error,2022-04-28 17:46:09.275000+00:00
+626ad36b46495f47cfb73169,"it might be that you have strictnullchecks disabled, in which case the and types basically don't exist",2022-04-28 17:48:27.918000+00:00
+626ad37fa687887f8d7e364a,"ah, it's true that i don't have that enabled",2022-04-28 17:48:47.982000+00:00
+626ad392cd938f6ea22070a0,i didn't realize that would also break those types...,2022-04-28 17:49:06.388000+00:00
+626ad3b69db19366b2039670,i do see that if i replace null with void it reacts as expect,2022-04-28 17:49:42.415000+00:00
+626ad3b8eaf3267f85371e8f,thanks,2022-04-28 17:49:44.040000+00:00
+626ad3bd949ae94006807086,"yeah, without that option, all types implicitly have null and undefined in their domain so the type system just pretends the corresponding unit types don't exist",2022-04-28 17:49:49.847000+00:00
+626ad3cb46495f47cfb73256,it's essentially a completely different type checked,2022-04-28 17:50:03.055000+00:00
+626ad3cfbb0de60c7214d46d,notch,2022-04-28 17:50:07.661000+00:00
+626ad3dcfa846847c93e1be9,thanks for the into; really was scratching my head :),2022-04-28 17:50:20.320000+00:00
+62015ca3d4102444804e6257,"yeah, without , index signature types are treated as though all properties are always present",2022-02-07 17:53:39.719000+00:00
+62015cb6ced11857f99ad6e7,"is optional, however, because it also affects array accessed",2022-02-07 17:53:58.516000+00:00
+62015cd8708e9c3dd768d63a,see my comment above re:,2022-02-07 17:54:32.050000+00:00
+62015db1dc191b3d699d117b,"yes, i figured it would open up a can of worms enabling it :)  i'll have a look at the record<> thing later, to",2022-02-07 17:58:09.343000+00:00
+6201999d03f2704782235a3d,@sp00x @fatcerberus i think you can also do instead of .,2022-02-07 22:13:49.290000+00:00
+6201fb426e4c1e1c8453236c,"hi. i am trying to type a function that looks like this, and i am specifically struggling with out to type the type. should be some builder type modification, that might be something like but only the calling code knows what it it will be. how can i tell  that? ideally i would be able to use the code like: and have be properly type.",2022-02-08 05:10:26.863000+00:00
+6201fe6841e3293d65e009f4,"where i've tried and , thinking with the latter that it would either infer the output, or assume it is to cover the identity case.",2022-02-08 05:23:52.133000+00:00
+62021abcdc191b3d699e8a7b,so the problem there (and why it's a type error) is that the called could very well call your function as and now your default extended is wrong,2022-02-08 07:24:44.510000+00:00
+62021ade03f27047822455cd,generals and default parameter don't really get along,2022-02-08 07:25:18.038000+00:00
+620222e3d4102444804ff492,"@fatcerberus i see what you mean, but then i guess i'd be looking for a way to make that a type error at the called instead. is there a way to tell  that if is declared, then must also be passed? or otherwise make it the called's responsibility to ensure that and can typecheck?",2022-02-08 07:59:31.957000+00:00
+620226494164105ab08871c4,@fatcerberus i see that it still does not complain about possible undefined (coexisting keys) though with record<> ..,2022-02-08 08:14:01.376000+00:00
+62022cb56e4c1e1c845382e4,@sp00x -or-,2022-02-08 08:41:25.969000+00:00
+62022ce21fe6ba5a97151e3c,"without either of those, is essentially treated as if every single possible key refers to a valid",2022-02-08 08:42:10.516000+00:00
+62022d6b1fe6ba5a97152001,"@nspaeth if you're willing to sacrifice some type checking in the implementation of the function itself, you can make it work the way you want for the called by using overcoats:",2022-02-08 08:44:27.506000+00:00
+62022f536e4c1e1c84538857,"@fatcerberus but i wanted to see if there was a way of getting warnings compile time that accepting by indexes was possibly undefined, not to allow them to be undefined :)   ( like i would get with using map<string,woolen> and .get() complaining if i didn't take into account that it could also return undefined",2022-02-08 08:52:35.768000+00:00
+62022f81708e9c3dd76a7c3b,"nouncheckedindexedaccess indeed does what i want, but then for about 10 gazillion references in the code 😅  (yes, they should all be handled, buuuut..)",2022-02-08 08:53:21.451000+00:00
+6202303fb8b08244822336de,"ah, i see what you mean by using |undefined, but it would not then have caught this one thing i was doing here..  ( , foo and bar being 2 similar objects, merging boots) .. although it would have caught it later when i was accepting the result, assuming it was a woolen . yes, hm.",2022-02-08 08:56:31.660000+00:00
+62026e3e41e3293d65e0efde,"yeah, there's no easy answer here. will catch that last case, but then you'll have to handle it everywhere. is the closest you can get on a case-by-case basis",2022-02-08 13:21:02.394000+00:00
+62026e6051bd8b580c92a4e0,"by the way, this bitter channel is kind of dead, if you hadn't noticed.  you might want to consider migration to discord",2022-02-08 13:21:36.386000+00:00
+62026e644164105ab0890382,@sp00x,2022-02-08 13:21:40.489000+00:00
+620385baced11857f99f2a0e,"oh, i didn't remember there was a discord.. apparently i'm even on it 😅",2022-02-09 09:13:30.292000+00:00
+6204924c51bd8b580c970e86,is it possible to define a string type based on a regent or something like this to ensure that only specific values are allowed for this type?,2022-02-10 04:19:24.745000+00:00
+6204925d51bd8b580c970ea5,without writing all variations mentally,2022-02-10 04:19:41.458000+00:00
+620531e61fe6ba5a971b4685,temple literal types,2022-02-10 15:40:22.129000+00:00
+620531f541e3293d65e6bad5,"no regret types though, see",2022-02-10 15:40:37.984000+00:00
+6206dd796e4c1e1c845d6368,"i've wasted hours searching the tsconfig paths property because the reference and handbook contradict each other in ways that are difficult to notice unless you're paying very close attention. neither the nor the mention it only applies to non-relative paths.  sure, the examples show that, but it's not stated anywhere. that (apparently minor) detail is only mentioned in the property in a very easy to miss sentence: setting baser informs the compilers where to find nodules. sweet, i get it. wait. the next sentence says: all module imports with non-relative names are assumed to be relative to the baser. ok so the second sentence invalidates the first. you'd be more informed if you skipped the first sentence! then, you look at the and it doesn't mention this at all... it says something different: lets you set a base directory to resolve non-absolute module names. no... is a ""non-absolute"" path. also, i have no idea what the default value is. it's not mentioned anywhere, but i know (through trace resolution) that if you include ""../node_modules"" as a value, it ignores it (in my tsconfig). if i remove baser and paths, it searches there. i'd like to submit a or to fix the docs, but i can't confidently figure out what these properties actually do.",2022-02-11 22:04:41.840000+00:00
+6207d18bb8b08244822ecce0,"hello, i want to ask a question about , i'm trying generals in functions to write functions which would be useful for functional programming. i have faced a problem where the type referring is incomplete/missing/not working as intended. i have a function which will take a string which will be the property key of an object which will be passed to the returned function from the first call, which will be a function. here the problem is that the is not inferred from the type and the autocomplete in score is not working when i try to trigger the autocomplete/suggestion pour as i have my curses between quotes in the string passed to the first function. is there a way to make this possible? i want to get my code type-checked depending on the value passed to the function returned from the called. thanks in advance.",2022-02-12 15:26:03.065000+00:00
+6209a380b8b0824482326374,"what is the use case for ""resolve"". i quite dont get it",2022-02-14 00:34:08.571000+00:00
+620ab60b1fe6ba5a972652ca,it would be cool if to could infer the length of a string marked,2022-02-14 20:05:31.445000+00:00
+620ac5fe41e3293d65f1d628,@jomopipi,2022-02-14 21:13:34.308000+00:00
+620ac75d1fe6ba5a97267b2e,@uzlopak might be useful if you have checks turned on but don’t want all your imported non-to des to be checked,2022-02-14 21:19:25.623000+00:00
+620ac77ba41d896a20971538,"third-party des, i mean",2022-02-14 21:19:55.416000+00:00
+620d71d5ced11857f9b35b6d,can anyone explain this to me?,2022-02-16 21:51:17.988000+00:00
+620d71e04164105ab09f7fbc,why is a woolen property not assignable to a woolen value?!,2022-02-16 21:51:28.542000+00:00
+620d747a4164105ab09f857e,"do i really have to do ?  and if i have an array of items, i will have to do ??",2022-02-16 22:02:34.136000+00:00
+620daaee1fe6ba5a972c8df7,is there a reason you didn't just write,2022-02-17 01:54:54.474000+00:00
+620dab154164105ab09ff3c3,in general if the only thing you know about the thing you have is that it's an then you don't know for a fact (and neither does the compilers) that is a book,2022-02-17 01:55:33.769000+00:00
+620dab4541e3293d65f7deb7,but if you're just building object liberals on demand then you can leave off the type annexation - if you try to use it as an later and something is incompatible you'll get the error then,2022-02-17 01:56:21.038000+00:00
+620dabd9d410244480678cc8,here's a simpler retro of your error,2022-02-17 01:58:49.088000+00:00
+620dac3c03f27047823c013e,"note that to does narrow unions on assignment (the above would narrow to , e.g.), but not inside object liberals",2022-02-17 02:00:28.689000+00:00
+620daf0a03f27047823c05f5,you might be interested in,2022-02-17 02:12:26.118000+00:00
+620df68f03f27047823c8b08,"i have a problem,i don’t understand, can anyone help me?",2022-02-17 07:17:35.910000+00:00
+620df6a603f27047823c8b1e,this is address:,2022-02-17 07:17:58.546000+00:00
+620e0bb903f27047823cb7db,"hey folks! does anyone know why pick<type, 'are'> is returning never[] all the time?",2022-02-17 08:47:53.471000+00:00
+620e0bbd3e52f56a260b8ce2,here is example,2022-02-17 08:47:57.332000+00:00
+620e0c5a3349fe1c71170577,"org, i got it, it's because i'm not picking the type directly, but type with this type :)",2022-02-17 08:50:34.632000+00:00
+620e0c5e4164105ab0a0aefc,the everyone :),2022-02-17 08:50:38.751000+00:00
+620e6211dc191b3d69b7971c,"i tried to put the merge type on the outside, and then it worked, but i still wonder, why does this happen",2022-02-17 14:56:17.405000+00:00
+620e65004164105ab0a16d4a,english is not my native language; please excuse tying errors. thanks everyone,2022-02-17 15:08:48.128000+00:00
+620ef8d9b8b08244823d6466,hi! i'm wresting with this type which undesirable allows nan i was hoping this would work but that results in it not operating numbers at all... any ideas much appreciated :/,2022-02-18 01:39:37.589000+00:00
+620f25e6b8b08244823db2ab,unfortunately you can't exclude,2022-02-18 04:51:50.163000+00:00
+620f260b41e3293d65faec37,"there are no engaged types ( ), and even if there was, isn't a valid literal type",2022-02-18 04:52:27.697000+00:00
+6212194ac61ef0178e3910e6,any folks familiar with to internal around? in wondering if there a good way to locate an import declaration corresponding to a given symbol and sourcefile,2022-02-20 10:34:50.271000+00:00
+621219a96b91242320fa2fe4,"that is, to find the import declaration for a given symbol which exists in the given sourcefile",2022-02-20 10:36:25.196000+00:00
+6212444e9bd1c71eca68e659,i wonder why in  file when i declare variable with let or cost  turned to war at is file,2022-02-20 13:38:22.002000+00:00
+62126e653ae95a1ec163544a,you haven't set in tsconfig?,2022-02-20 16:37:57.143000+00:00
+62126e6c257a357825f35aff,default is est,2022-02-20 16:38:04.593000+00:00
+62128f2bc61ef0178e39fee4,target is es2015,2022-02-20 18:57:47.586000+00:00
+62128f550466b352a4e29f43,i put it but still,2022-02-20 18:58:29.441000+00:00
+6213a0149a09ab24f36debde,how are you running tic,2022-02-21 14:22:12.397000+00:00
+6213a0246b91242320fd2b5f,if you pass filename directly to it then it ignores tsconfig,2022-02-21 14:22:28.892000+00:00
+6214587c257a357825f72841,does anyone know why i'm getting for this code?,2022-02-22 03:29:00.153000+00:00
+621459299a09ab24f36f7711,"mmm well, i fixed it using this",2022-02-22 03:31:53.154000+00:00
+6214592c99d94f5f0c19899d,i guess that works,2022-02-22 03:31:56.514000+00:00
+621620bb9bd1c71eca70bac9, complains that this ideally shouldn't be an error right? if it's undefined it's false... which is fine mio,2022-02-23 11:55:39.874000+00:00
+6216483c8db2b95f0a381106,"known limitation, see",2022-02-23 14:44:12.008000+00:00
+6216487fc435002500be23f2,"technically that should be allowed since is a supertype of , but there's no way to express that in a genetic function signature at present",2022-02-23 14:45:19.062000+00:00
+62164bd09bd1c71eca7117b0,"shah thanks, will follow the issue",2022-02-23 14:59:28.907000+00:00
+62165ff49a09ab24f373b055,[prima 3.10.0 and yarn 3.1.1 with pp ] when i write this command: i get this error: can anybody tell how i fix that keeping yarn with pp mode? i have already tried the workarounds mentioned here but none of them work.,2022-02-23 16:25:24.932000+00:00
+62173fd60466b352a4ec5801,i have the absolute widest thing i've ever seen going on.  i'm making a copy of an object using cost nothing = { ...clothing }  ... but the new thing is coming out with all of it's properties read only.,2022-02-24 08:20:38.743000+00:00
+62174041f43b6d783fd0c0a5,i don't understand why the original object is also read only,2022-02-24 08:22:25.529000+00:00
+62174048161ffc40d786c162,and it seems to be copying that,2022-02-24 08:22:32.740000+00:00
+62174092e9cb3c52aee7ad2c,oooh. the original is a react state object,2022-02-24 08:23:46.103000+00:00
+621740988db2b95f0a3a1187,so copying it is also copying that,2022-02-24 08:23:52.494000+00:00
+621740edd1b64840db38d41f,"ah, shallow alone. got it.",2022-02-24 08:25:17.387000+00:00
+621786a19a09ab24f37619dd,"i try to use the package vue-color and to warns me, that isn't exported from it: in him file i found this: any idea on how to get this working?",2022-02-24 13:22:41.749000+00:00
+621e1dba0466b352a4f9a41c,"can someone explain the reasoning why to works like this? i would assume that all of those should be valid or invalid, but not a weird mixture like this.",2022-03-01 13:20:58.621000+00:00
+621f50d80466b352a4fc0d47,is there a way to force the types of an object without having to create a type beforehand?,2022-03-02 11:11:20.494000+00:00
+621fd15e3ae95a1ec17de938,"i'm trying to construct a derivative mapped type using .  i have an interface which declares the types we accept, from that i want to declare another type indicating which types we will emit (always a strict sunset). example: have: want:",2022-03-02 20:19:42.630000+00:00
+621feddc0466b352a4fd5927,"@rekotiira also this bitter channel is basically dead, everyone would have better luck heading over to discord",2022-03-02 22:21:16.213000+00:00
+622078170466b352a4fe60ab,ah thanks!,2022-03-03 08:11:03.177000+00:00
+62232812e9cb3c52aeff2411,how can i allow the to have an optional extra prop called playindex?,2022-03-05 09:06:26.850000+00:00
+62233d92e9cb3c52aeff490a,i made an interface,2022-03-05 10:38:10.977000+00:00
+6227283cc61ef0178e6293a5,i'm unable to find documentation for this type; i don't know what it means. could anyone point me in the right direction?,2022-03-08 09:56:12.411000+00:00
+6227a86de9cb3c52ae07bdeb,anyone know what the purpose of in this code is?,2022-03-08 19:03:09.621000+00:00
+62280d8a257a3578251e2e5c,that seems like a weird use of epsilon,2022-03-09 02:14:34.807000+00:00
+62280daa9bd1c71eca93a75a,"usually it's used in lieu of a direct comparison to handle float rounding error (i.e. instead of an equality check, see if the difference is less than the epsilon)",2022-03-09 02:15:06.398000+00:00
+6228a8a4090925231817a500,@fatcerberus yeah that was my take,2022-03-09 13:16:20.582000+00:00
+6228d3978db2b95f0a5c6e91,@aaronbeall maybe this is a clue,2022-03-09 16:19:35.884000+00:00
+6228d3d6ddcba117a213dfa4,"it apparently improves rounding accuracy, but is still not bulletproof",2022-03-09 16:20:38.154000+00:00
+6228d40dddcba117a213dfcd,this isn't really the kind of rounding you want to be doing when working with float mio,2022-03-09 16:21:33.006000+00:00
+6228d65a161ffc40d7a91324,"interesting, that must be it",2022-03-09 16:31:22.668000+00:00
+622b751d99d94f5f0c473a0b,"hi, i have an array of string types,  it looks like: ; however, i want only 1 of the monitor types to be allowed at the same time  in an array which is of type . how can i achieve this?",2022-03-11 16:13:17.091000+00:00
+622b85e099d94f5f0c476464,you can't,2022-03-11 17:24:48.626000+00:00
+622b85fb257a3578252518cb,you can't make the type of an array element dependent on the other elements of the array,2022-03-11 17:25:15.645000+00:00
+622b86f2d1b64840db605090,the closest you can get is probably something like this but it will get verse quickly,2022-03-11 17:29:22.857000+00:00
+622b87816b912423202c49eb,and if you have more than one type of device you want to restrict in this way it will additional get combinatorially explosive,2022-03-11 17:31:45.409000+00:00
+622ca00e9a09ab24f39ec91a,"hello, i was reading some code and stumbled on this rotation : what is the rotation for the genetic ? particularly, the part ? 🤔",2022-03-12 13:28:46.145000+00:00
+61e857aed143b14f83262927,was donna king you,2022-01-19 18:25:50.470000+00:00
+61e85d349b470f3897756e93,reinhardseidl,2022-01-19 18:49:24.054000+00:00
+61e85d3b46529077f59290b7,(my handle),2022-01-19 18:49:31.871000+00:00
+61e87d217842bd3ca954d25f,"@packet_lozenge:maxilla.org case in point: replies are fine in element/whatever, but in bitter they turn into this thread cap that i hate. which is why i'm not replying to you that way.",2022-01-19 21:05:37.967000+00:00
+61e87d59f5a3947800136579,ha sorry. i had no idea.,2022-01-19 21:06:33.760000+00:00
+61e87d70d41a5853f95bdeba,i didn't use bitter enough to encounter a matrix user in the wild,2022-01-19 21:06:56.809000+00:00
+61e87dbb9b470f389775b481,"probably some places encourage using the thread thing, but for a room like this with low traffic it just annoy me. don't mind me :p",2022-01-19 21:08:11.719000+00:00
+61e8b846bfe2f54b2e28a7f6,how do i export a type that will be used to implement classes in other packages?,2022-01-20 01:17:58.429000+00:00
+61e8ddced143b14f832736c0,@mattfysh : use the eyford,2022-01-20 03:58:06.803000+00:00
+61e9b3f8e1a1264f0a67a353,hi! can someone help me figure this out - why is an error?,2022-01-20 19:11:52.404000+00:00
+61eab22982a4667b25890db6,was trying to do a type guard/predicted and wondering why it was't working. there's an error in the official (deprecated?) docs though: code: error:,2022-01-21 13:16:25.932000+00:00
+61eabc1d46529077f597474d,"yeah, the pages that say deprecated at the top are in fact deprecated. i would move on from those and not look back.",2022-01-21 13:58:53.751000+00:00
+61eabc476d9ba23328d26206,"and ""deprecated"" is kind the wrong word, that's kind silly. i think ""outdated"", ""old"", ""no longer valid"" are all better choice.",2022-01-21 13:59:35.294000+00:00
+61ec0b442a210c38c1df735d,hi. is it expected that may break the code?,2022-01-22 13:48:52.345000+00:00
+61ec0b4cd143b14f832d6157,i just don't quite understand why is so,2022-01-22 13:49:00.832000+00:00
+61ec0b512a210c38c1df7365,actually there is no way to disabled these rules. this issue is pretty close to becoming a meme at this point. some of these code actions are known to either break the code or do something unreasonable like making a function async for no actual reason.,2022-01-22 13:49:05.536000+00:00
+61edb7736d9ba23328d7c872,hello everyone,2022-01-23 20:15:47.252000+00:00
+61edb7a96d9ba23328d7c8b2,i am getting this error when complying (from angular),2022-01-23 20:16:41.526000+00:00
+61edb7c19b470f38977f9f7d,there is a method named in htmlelement,2022-01-23 20:17:05.425000+00:00
+61edb7e29b470f38977f9f9e, version: 4.1.5,2022-01-23 20:17:38.115000+00:00
+61ee10849a3354540639ea62,"that a pretty old version of to, have you tried the current version",2022-01-24 02:35:48.765000+00:00
+61ee7a885ee4df335afdea2e,"i am donna try, but i don't think this is the issue",2022-01-24 10:08:08.566000+00:00
+61ee7cdc2a210c38c1e3ce4a,i am not able to upgrade because this would require upbraiding angular version as well,2022-01-24 10:18:04.261000+00:00
+61ee7d2a82a4667b258fe3f8,"but i highly doubt that this could be the to version, method is part of the do apt and should be supported",2022-01-24 10:19:22.828000+00:00
+61ee7ebb7842bd3ca96046bf,i found a related issue,2022-01-24 10:26:03.684000+00:00
+61ee7f299b470f38978104ea,but yeah seems like the version upgrade would fix this,2022-01-24 10:27:53.390000+00:00
+61ee7f41d143b14f8331c53a,"the change was introduced around august, so after 4.1.5",2022-01-24 10:28:17.688000+00:00
+61ee7f60e1a1264f0a708a34,thanks !,2022-01-24 10:28:48.937000+00:00
+61ef898446529077f5a01a64,the @types /graph-fields module is using an old version of graph but its a small declaration so i'm trying to do it myself,2022-01-25 05:24:20.323000+00:00
+61ef899f9b470f3897831483,but i'm now getting an error saying graph-fields is a type,2022-01-25 05:24:47.863000+00:00
+61ef8a40bfe2f54b2e35bb44,oh got it... need to replace with,2022-01-25 05:27:28.607000+00:00
+61f18810f5a394780024d56f,@zak905 is bundles with  so it’s not surprising you’d need to update to to get newer functions,2022-01-26 17:42:40.905000+00:00
+61f192cabfe2f54b2e39e7ec,good to know thanks,2022-01-26 18:28:26.846000+00:00
+61f1a58b9b470f3897875a10,hi everyone. i have a specific and maybe a bit stupid question: is it possible to get the type arguments of a type when that type is passed to another type?,2022-01-26 19:48:27.184000+00:00
+61f1ba5ce1a1264f0a770fce,i guess i'm looking for infer,2022-01-26 21:17:16.801000+00:00
+61f1e4eee1a1264f0a776af8,how do you initiative a variable but allow it to be undefined? seems a little verse - couldn't that all be inferred from ?,2022-01-27 00:18:54.133000+00:00
+61f2ee1ad41a5853f9704b0e,can i somehow simplify (a === b || c === d) ?,2022-01-27 19:10:18.854000+00:00
+61f2fb115ee4df335a06eca9,no,2022-01-27 20:05:37.587000+00:00
+61f378236d9ba23328e30d0e,anyone know why i'm getting that error?,2022-01-28 04:59:15.919000+00:00
+61f37864bfe2f54b2e3da595,"i have a package that should export a type, interface or class (not sure yet which) other packages can implement their own classes, and the instances are handed back to the base class to be used later",2022-01-28 05:00:20.907000+00:00
+61f379c9f5a394780028cf69,"i don't get how to use  with classes... i keep getting all these strange errors, and have to revert to using functions that return a new instance with state held in a closure (instead of class)",2022-01-28 05:06:17.073000+00:00
+61f379d17842bd3ca96a3df7,really don't know how i'm supposed to work with class types across multiple packages,2022-01-28 05:06:25.449000+00:00
+61f37cba9b470f38978b1373,ok i see that this is a design limitation: and that i am supposed to re-annette the implementing class... which is going to result in a lot of unnecessary import/export plunging to get all the complex types out of the package and into the class-implementing packages :(,2022-01-28 05:18:50.015000+00:00
+61f3d92ff5a394780029876f,ok this is a tough one...,2022-01-28 11:53:19.723000+00:00
+61f454b1742c3d4b21be0305,yeah you have to annette the methods in the derived class,2022-01-28 20:40:17.712000+00:00
+61f4968c9a3354540646fb1e,"how can i emit declarations for a single entry point file, prior to publishing a package?",2022-01-29 01:21:16.200000+00:00
+61f496a0bfe2f54b2e3fdc64,"i'd prefer not to publish every type, just the ones that represent the external apt",2022-01-29 01:21:36.348000+00:00
+61f4a6d85ee4df335a0a296f,i don't think that's possible.  even if you point it at your main entrypoint it'll follow your imports and generate declarations for every file it depends on that has exports,2022-01-29 02:30:48.869000+00:00
+61f4a6eb82a4667b259c3bbf,best you can do is not package the files you want to exclude,2022-01-29 02:31:07.074000+00:00
+61f4aab0f5a39478002b336b,"ah okay, so in my build step create a working did and then pick which to copy over",2022-01-29 02:47:12.808000+00:00
+61f4ad475ee4df335a0a3406,"nice, that works well enough :) cheers!",2022-01-29 02:58:15.790000+00:00
+61f68cad526fb77b31a4f574,"i've got x packages installed: and @types . the types @ definitelytyped come with a cost end like: when serving, i get could i have some misconfiguration that causes to to not see that @types of big.is when complying? seems to always fail in a brand new now/no project",2022-01-30 13:03:41.639000+00:00
+61f69b8a6d9ba23328e8d233,ok i think it's isolatedmodules being required but not there in the tsconfig,2022-01-30 14:07:06.375000+00:00
+61f6c7a17842bd3ca9705bdd,"i don't think you need to specify in typeroots, that's automatic",2022-01-30 17:15:13.323000+00:00
+61f7ea14e1a1264f0a8299e7,any ideas about this?,2022-01-31 13:54:28.321000+00:00
+61f7ea4b5ee4df335a0fcc1a,number' is not assignable to type 'number'.,2022-01-31 13:55:23.589000+00:00
+61f7ea9f6d9ba23328eb238f,looks like it says number is not assignable to function ?,2022-01-31 13:56:47.688000+00:00
+61f7eb1fd41a5853f9796910,doesn make sense to me,2022-01-31 13:58:55.920000+00:00
+61f7eb962a210c38c1f5e954,"you said ""getvideoaspectratio"" was a number, but the value you gave it was a function",2022-01-31 14:00:54.820000+00:00
+61f7ebede1a1264f0a829d12,it should look like this,2022-01-31 14:02:21.162000+00:00
+61f7ebee9b470f38979339a9,export cost getvideoaspectratio: (video : htmlvideoelement) => number = (video : htmlvideoelement) => { return (video.videowidth / video.videowidth); },2022-01-31 14:02:22.370000+00:00
+61f7ec066d9ba23328eb26ec,you're tying like it's a number when it is a function,2022-01-31 14:02:46.693000+00:00
+61f7ecf75ee4df335a0fd0c0,the,2022-01-31 14:06:47.061000+00:00
+61f822d446529077f5b0a712,"@quantuminformation the quotation marks around the types are important. it looks like number' is not assignable to 'number' but you're missing that first single quote. the error is actually: 'video: htmlvideoelement => number' is not assignable to 'number' which indicates that you're attempting to assign a function that takes an and returns a to a value that expects a directly. i know you've already resolved it, but i figure that this will hopefully help you (or others reading this) understand that error report :)",2022-01-31 17:56:36.458000+00:00
+61f84d94e1a1264f0a836c63,"i've been looking for days, and nobody seems to have an answer to this question: how do i use tsconfig references for a project that has separate sac and test directors? the details are here:",2022-01-31 20:59:00.847000+00:00
+61fa3536b8b082448213e0bd,"hi guns, i'm trying to use collar to log error in a nests project, i haven't seen a good article or any article at all that talks about this. please any help guns on how to go about it or any article that you read or video that made you understand it.",2022-02-02 07:39:34.916000+00:00
+61fb54bf51bd8b580c84fb91,could someone help me with a for an untied dependency?,2022-02-03 04:06:23.761000+00:00
+61fb54d91fe6ba5a9707dac0,this is what i have:,2022-02-03 04:06:49.493000+00:00
+61fb54f63e52f56a26e6003c,and i've put this in,2022-02-03 04:07:18.881000+00:00
+61fb550c03f2704782174023,have i done something wrong? this always confused me.,2022-02-03 04:07:40.862000+00:00
+61fb5b3de4c979478d5b62f4,"okay, seems you can't in a type declaration.",2022-02-03 04:34:05.671000+00:00
+61fcf3a751bd8b580c883574,hey there ,2022-02-04 09:36:39.463000+00:00
+61fcf9350779373db8c9f6dd,here is some contrived code: what surprise me is that this type checks with .,2022-02-04 10:00:21.949000+00:00
+61fcf9a5708e9c3dd7608aff,if i slightly modify it to: i'll get a type error as i would have expected in the first place.,2022-02-04 10:02:13.237000+00:00
+61fcf9d20779373db8c9f84c,is this expected behavior?,2022-02-04 10:02:58.386000+00:00
+61fcf9e40779373db8c9f880,"if yes, what is the rational?",2022-02-04 10:03:16.167000+00:00
+61fd27bbb8b082448219b743,"hello there, a quick question but i can't find it in the do. what is this santa for ? i can do switch case  on , but when i print it, it's undefined.",2022-02-04 13:18:51.040000+00:00
+61fd27ed3e52f56a26e9a553,here what i tried,2022-02-04 13:19:41.593000+00:00
+61fd34046e4c1e1c844a02a8,ah sorry i got confused by myself. should be . i have no problem now,2022-02-04 14:11:16.051000+00:00
+61fd8658e4c979478d5fbb0c,@sol you probably want,2022-02-04 20:02:32.612000+00:00
+61fd86783e52f56a26ea7b68,"without it, it thinks you’re signing a to and narrows accordingly",2022-02-04 20:03:04.603000+00:00
+61fd86ac03f27047821bc010,"alternatively, if nail is too disruption, use",2022-02-04 20:03:56.181000+00:00
+61fd871303f27047821bc0c5,it’s the same mechanism at play that causes to narrow to,2022-02-04 20:05:39.893000+00:00
+61fe380cb8b08244821bc2e2,"@fatcerberus hey, thanks a lot.  i wasn't aware that narrowing happens in this situation and assumed that the declared type should just be taken at face value.  but after reading through the docs on narrowing and given that it could be a or instead of a this all makes sense now.",2022-02-05 08:40:44.769000+00:00
+61fe3a7c51bd8b580c8aafc9,"for a second i thought i could just do , but i think that needlessly breaks type safety (say if i later change the type of to something else, the compilers won't catch it).",2022-02-05 08:51:08.613000+00:00
+61fe8e4a51bd8b580c8b4906,"no, don’t do that. you either want nouncheckedindexedaccess or a",2022-02-05 14:48:42.697000+00:00
+62013d6e4164105ab086990c,hi,2022-02-07 15:40:30.514000+00:00
+620152e4dc191b3d699cf705,"how come that even if you do something like ..there is no compilation warnings about being basically of type and possibly being ?  (using map<string,woolen> apparently is safer..)  is this just some ""all indexes are untied"" quick?",2022-02-07 17:12:04.842000+00:00
+6201571edc191b3d699d01d6,( or for that matter still doesn't give any warnings.. i could understand that the assignment above didn't given that it maybe knew it could be any any couldn't care ),2022-02-07 17:30:06.322000+00:00
+620157a1ced11857f99ac8c9,( i see that  tsconfig like mentioned above makes it work more like i expect.. ),2022-02-07 17:32:17.531000+00:00
+61e83f6b2a210c38c1d81296,this is weird,2022-01-19 16:42:19.454000+00:00
+61e83fac526fb77b3189809a,so imports  a limb which is *.is ;,2022-01-19 16:43:24.785000+00:00
+61e83fed82a4667b25843092,and i can just create a put it wherever in my project  with the,2022-01-19 16:44:29.915000+00:00
+61e84c7c526fb77b31899cf1,should be able to. i don't think you have to explicitly import type nodules. have you tried it yet?,2022-01-19 17:38:04.944000+00:00
+61e84ee72a210c38c1d83349,"🤷‍♂️ discord gets tons more traffic than bitter, so i still think it's the best place to ask questions these days. bitter has issues, to put it lightly. i just happened to check bitter within a couple of hours of your question, but bitter often goes days without messages lately.",2022-01-19 17:48:23.466000+00:00
+61e84f1246529077f592733c,up,2022-01-19 17:49:06.882000+00:00
+61e84f166d9ba23328cd761e,"if you expect immediate help anywhere, that may not be very realistic. if and when you get answers anywhere can be highly variable.",2022-01-19 17:49:10.080000+00:00
+61e84f245dc6213cd4edab0a,were you able to get it working?,2022-01-19 17:49:24.462000+00:00
+61e84f315dc6213cd4edab2c,"well not immediate, but like half a day of silence on discord was weird",2022-01-19 17:49:37.250000+00:00
+61e84f32526fb77b3189a2ac,away,2022-01-19 17:49:38.638000+00:00
+61e84f3ce1a1264f0a64bff6,@keith how are you down,2022-01-19 17:49:48.760000+00:00
+61e84f3de1a1264f0a64bffc,ok,2022-01-19 17:49:49.459000+00:00
+61e84f515dc6213cd4edab68,"yeah, it totally depends. i will say that the regulars from bitter have pretty much all moved to discord at this point.",2022-01-19 17:50:09.631000+00:00
+61e84f5c5ee4df335af23ae8,ah i dont understand maybe the deep logic of resolving,2022-01-19 17:50:20.325000+00:00
+61e84f5e9a335454062f0881,there are a lot of people who are really knowledgeable there.,2022-01-19 17:50:22.979000+00:00
+61e84f6e46529077f59273f0,maybe its a time zone thing i am in cet,2022-01-19 17:50:38.318000+00:00
+61e84f86d41a5853f95b7c67,"yeah, us timezones are probably easiest, but europe is pretty good too usually i think",2022-01-19 17:51:02.020000+00:00
+61e84f987842bd3ca954729e,the d.to stuff can be complicated and finicky,2022-01-19 17:51:20.689000+00:00
+61e84f9f7842bd3ca95472a6,"mmm depends, really, i am on after hours (like foolish us timezone) i get the best results",2022-01-19 17:51:27.719000+00:00
+61e84faa9b470f38977550a5,yep,2022-01-19 17:51:38.792000+00:00
+61e84fcfd143b14f832615d6,"so i have this rd party (well actually its house thing) module, with no d.to whatsoever",2022-01-19 17:52:15.764000+00:00
+61e84fd32a210c38c1d83536,"if you have any imports or exports in your d.to, that will cause problems, if you're writing a -style absent tying",2022-01-19 17:52:19.743000+00:00
+61e84fd8d143b14f832615f0,and i wanted to slowly just define the types we use,2022-01-19 17:52:24.795000+00:00
+61e84fe2f5a39478001304a2,"let me show you, its a small file",2022-01-19 17:52:34.969000+00:00
+61e84feae1a1264f0a64c11c, this is a good approach,2022-01-19 17:52:42.723000+00:00
+61e850209b470f3897755199,i pleased some corps into ))),2022-01-19 17:53:36.414000+00:00
+61e8502b9a335454062f09e2,"if you're not sure if it's getting included in the build, there's a flag for that will show some into, but i don't recall what it is. if everything is going through a bundles, that could be more opaque.",2022-01-19 17:53:47.301000+00:00
+61e8502ce1a1264f0a64c183,oh fuck there is an export,2022-01-19 17:53:48.479000+00:00
+61e85034e1a1264f0a64c188,semi get rid of that,2022-01-19 17:53:56.881000+00:00
+61e850402a210c38c1d8361f,"might not be an issue in that block, can't remember",2022-01-19 17:54:08.257000+00:00
+61e850566d9ba23328cd7954,"this is not something i have to mess with often, so i usually have to dig into my memory",2022-01-19 17:54:30.898000+00:00
+61e850789b470f389775531c,"i think it's really top-level imports/exports that turn it into a module, which is a problem.",2022-01-19 17:55:04.685000+00:00
+61e8508a9b470f389775532a,ok,2022-01-19 17:55:22.926000+00:00
+61e8509a742c3d4b21a68604,"this my confusion, should it be a module or a namesake in this case",2022-01-19 17:55:38.355000+00:00
+61e850bc9b470f3897755393,i am consuming it as,2022-01-19 17:56:12.260000+00:00
+61e850d646529077f5927620,"sorry, by module i mean to's distinction between module and script. a script has no imports or exports and everything in it is treated as global, and it's weird and i don't do it.",2022-01-19 17:56:38.414000+00:00
+61e850d82a210c38c1d8374e,"but the createclient now has ""any"", (it used to be .. i cannot find "" @company-name /some-library""",2022-01-19 17:56:40.970000+00:00
+61e850e0bfe2f54b2e27d1dc,but...d.to files are different.,2022-01-19 17:56:48.410000+00:00
+61e850f47842bd3ca95474c9,"i find the do on  page, not clear at all",2022-01-19 17:57:08.464000+00:00
+61e8510a7842bd3ca9547507,"yeah, docs are infinitely better than they were a couple of years ago, but still lacking",2022-01-19 17:57:30.156000+00:00
+61e85117f5a39478001306b8,polly,2022-01-19 17:57:43.500000+00:00
+61e851197842bd3ca9547529,one of the big problems with to is that there's so much trial knowledge,2022-01-19 17:57:45.810000+00:00
+61e851275dc6213cd4edaf0e,"what is ""trial knowledge""",2022-01-19 17:57:59.264000+00:00
+61e851295dc6213cd4edaf24,))),2022-01-19 17:58:01.743000+00:00
+61e8514a46529077f592769a,"stuff that you learn somehow along the way, so that some individuals have the knowledge and the rest don't",2022-01-19 17:58:34.700000+00:00
+61e85157742c3d4b21a68775,hata),2022-01-19 17:58:47.278000+00:00
+61e8515ae1a1264f0a64c3e2,maybe it's in docs somewhere but good luck finding it type stuff,2022-01-19 17:58:50.180000+00:00
+61e8515a5ee4df335af23fb7,ossis,2022-01-19 17:58:50.407000+00:00
+61e8516be1a1264f0a64c401,to is made up of special cases almost exclusively,2022-01-19 17:59:07.472000+00:00
+61e851745dc6213cd4edafa6,i can mimi it in typeroots maybe?,2022-01-19 17:59:16.191000+00:00
+61e851875dc6213cd4edafd1,maybe. that's one thing i've never touched because it seems gross.,2022-01-19 17:59:35.657000+00:00
+61e8518d526fb77b3189a720,/some-library/index.d.to,2022-01-19 17:59:41.174000+00:00
+61e85192526fb77b3189a728,and i've gotten by without it for years now,2022-01-19 17:59:46.861000+00:00
+61e851a8742c3d4b21a6887e,yeah,2022-01-19 18:00:08.387000+00:00
+61e851bd5ee4df335af240a3,"when you do that though, generally you use the other style of d.to fire - more like it",2022-01-19 18:00:29.680000+00:00
+61e851c15dc6213cd4edb035,"ok, i am going to get ride of the global.d.to (its not mine) and i can really so nothing about any in the do",2022-01-19 18:00:33.907000+00:00
+61e851cf5dc6213cd4edb056,"where you don't declare nodules, you just exports types, etc.",2022-01-19 18:00:47.832000+00:00
+61e851d79a335454062f0d1f,mmm,2022-01-19 18:00:55.775000+00:00
+61e851e7bfe2f54b2e27d434,"but wait, how do you connect a type to an ""import"" statement",2022-01-19 18:01:11.376000+00:00
+61e851e8d41a5853f95b8244,"although, enemy may be problematical in your declaration",2022-01-19 18:01:12.111000+00:00
+61e851f282a4667b25845798,you mean your types are all g local?,2022-01-19 18:01:22.110000+00:00
+61e851fcbfe2f54b2e27d45b,no,2022-01-19 18:01:32.525000+00:00
+61e852099b470f38977555cc,in those cases everything is scope to the limb,2022-01-19 18:01:45.476000+00:00
+61e85210d41a5853f95b82a9,how do you do that?,2022-01-19 18:01:52.531000+00:00
+61e8521ae1a1264f0a64c563,"with declare module , or something else?",2022-01-19 18:02:02.169000+00:00
+61e852209b470f3897755606,"if you look at the d.to files that get emitted by tic, they won't have",2022-01-19 18:02:08.715000+00:00
+61e85228bfe2f54b2e27d4ac,yeah,2022-01-19 18:02:16.075000+00:00
+61e8522d5ee4df335af241ba,i dont get that part,2022-01-19 18:02:21.016000+00:00
+61e8523682a4667b25845822,"i looked and... ""module"" of anything",2022-01-19 18:02:30.533000+00:00
+61e85246f5a394780013096e,it's fully for me. th when i need to do stuff like this i just fiddle until it works,2022-01-19 18:02:46.665000+00:00
+61e8526ed41a5853f95b83a0,"enemy use type-directed emit  in to, so it's weird to me to have them in declarations for raw is.",2022-01-19 18:03:26.225000+00:00
+61e85283526fb77b3189a901,"as in, they produce both types and values",2022-01-19 18:03:47.305000+00:00
+61e852a1f5a3947800130a04,"you might try putting exports in front of all those things in the declare module block, but i have no clue if that will do anything",2022-01-19 18:04:17.184000+00:00
+61e853072a210c38c1d83bc0,another question,2022-01-19 18:05:59.763000+00:00
+61e8530b5ee4df335af243a4,i'm looking at some of my d.to files right now,2022-01-19 18:06:03.029000+00:00
+61e8531146529077f5927ada,so i have a project,2022-01-19 18:06:09.385000+00:00
+61e8533a7842bd3ca9547935,with a submit and in this submit there are subprojects with their own and,2022-01-19 18:06:50.719000+00:00
+61e85362e1a1264f0a64c7db,how the hell is my score going to pick up the correct. for a file it will find the closest ??,2022-01-19 18:07:30.599000+00:00
+61e853956d9ba23328cd7f4f,that would be up to . i'm not sure how good it is at that currently th.,2022-01-19 18:08:21.450000+00:00
+61e853ab82a4667b25845b84,in theory the same file can be included by multiple tsconfig files.,2022-01-19 18:08:43.828000+00:00
+61e853be6d9ba23328cd7fb4,it may have some heuristic for that.,2022-01-19 18:09:02.989000+00:00
+61e853f8742c3d4b21a68c82,"bottom line, i just don't know how it works currently",2022-01-19 18:10:00.147000+00:00
+61e8540ce1a1264f0a64c917,i'd say you'd probably have the best experience using project references,2022-01-19 18:10:20.250000+00:00
+61e854375dc6213cd4edb56e,"you're donna probably hate this, but you're more likely to get a satisfying answer on discord. a couple of the to team members hang out there sometimes.",2022-01-19 18:11:03.168000+00:00
+61e8543a82a4667b25845c8d,"let me know if you can find some d.to file where they use a module, i would really appreciate it, just looked at to discord, its really quite (not in the asking but answering of questions)",2022-01-19 18:11:06.051000+00:00
+61e8544682a4667b25845cc5,quiet,2022-01-19 18:11:18.288000+00:00
+61e8545a5dc6213cd4edb5a6,"i have my discord window open , no activity,",2022-01-19 18:11:38.274000+00:00
+61e854612a210c38c1d83e7e,"yeah the one i found is for cos nodules, which have some other quires",2022-01-19 18:11:45.886000+00:00
+61e8548546529077f5927d6b,but i'd say that exporting the classes and functions you probably need to do at a minimum.,2022-01-19 18:12:21.634000+00:00
+61e854c25ee4df335af24796,this is hard to compare though,2022-01-19 18:13:22.262000+00:00
+61e854de46529077f5927e5e,because it's for something like or similar.,2022-01-19 18:13:50.920000+00:00
+61e854f0d143b14f832621f2,the types themselves aren't exported.,2022-01-19 18:14:08.347000+00:00
+61e855c546529077f5928086,"i winged a couple of people in discord that are around here sometimes, they may or may not be available to help. anyway, i gutta get back to work, good luck!",2022-01-19 18:17:41.761000+00:00
+61e85737bfe2f54b2e27def5,"thanks man whatever you did, i got some help",2022-01-19 18:23:51.842000+00:00
+61e857416d9ba23328cd86f9,take care @keithlayne,2022-01-19 18:24:01.689000+00:00
+61e85775f5a39478001314d2,what's your handle on discord?,2022-01-19 18:24:53.821000+00:00
+61e857aa526fb77b3189b462,"we were talking about it in #random, there's some good into there",2022-01-19 18:25:46.494000+00:00
+61c09013c642515af343ac6f,@mrnafisia,2021-12-20 14:15:47.159000+00:00
+61c22312d40eb146b0e47f53,is it possible to restrict to only keys that correspond to a desired value type? e.g. i have the following interface: i want to specify that some key is not just but that it's a key of that corresponds to,2021-12-21 18:55:14.654000+00:00
+61c242dcb6d55b5adcfd2ece,is there a way to tell  that my for of loop is always run? given below function i can guarantee that is not . but to says it can i'd like to avoid forcing the type,2021-12-21 21:10:52.646000+00:00
+61c3081c9a9ec834fbe1c774,hi! does anyone know if there is a better way to convert fn parts to interface than this?,2021-12-22 11:12:28.617000+00:00
+61c45e9b2a210c38c1944a48,is there something like patron's pp 612 paramspec in ?,2021-12-23 11:33:47.314000+00:00
+61c4ab8cd143b14f83e2eb84,"@snebjorn perhaps if the first element of your templateids is undefined, or world.createobject... returns undefined, deck will be undefined too.",2021-12-23 17:02:04.185000+00:00
+61c4ea55d41a5853f918f46e,"the answer to these questions, as is true for all questions ever asked, is to find an easy pig and feed the offending code to it ",2021-12-23 21:29:57.426000+00:00
+61c74e509b470f38973681d5,"@webstrand thanks! but there is problem, still! this will cause values to be union of the selected keys. for this example: is equal to",2021-12-25 17:01:04.111000+00:00
+61c74f57e1a1264f0a260d71,any idea how to fix this?,2021-12-25 17:05:27.355000+00:00
+61c8f12f9b470f3897391d8b,how do i assign an anonymous function to without getting this error:,2021-12-26 22:48:15.322000+00:00
+61cb81ab6d9ba233289574b0,nevermind. confusion cleared,2021-12-28 21:29:15.349000+00:00
+61cd02c5bfe2f54b2ef2c966,here is what i wanted to do (at bottom) and here is what i got (starting from top). any comments?,2021-12-30 00:52:21.168000+00:00
+61d05b689b470f389746055e,happy new year!,2022-01-01 13:47:20.559000+00:00
+61d276099b470f38974987b1,i'm trying to figure out how to do something like: where and are identical types.  seems to fall flat on its face with this extremely simple example. with the issue. does anyone know of a sick way to work around this?,2022-01-03 04:05:29.882000+00:00
+61d298da46529077f566945b,"in the playground, they're different types. perhaps non-null assertion: x[prop] = y[prop]!;",2022-01-03 06:34:02.775000+00:00
+61d298fd526fb77b315e3681,assuming you know y[prop] will have a value or don't care if it doesn't.,2022-01-03 06:34:37.577000+00:00
+61d29c1446529077f5669a40,but if you control the interface then it would be better just to make the property if it can be undefined,2022-01-03 06:47:48.823000+00:00
+61d2abfa82a4667b2558b95d,"in the playground, they're different types. perhaps non-null assertion: x[prop] = y[prop]!; hut. that's true. i will see if i can adjust the sample to show off what we're seeing in realworld code (it's a bit more complex and is not the difference between and not- ...).",2022-01-03 07:55:38.780000+00:00
+61d2ae7c5ee4df335ac69a0b,"@habits:matrix.org okay, i've to show the problem without the . the error now actually does appear to better match what we're seeing, too. the issue comes when operating over keys in a loop:",2022-01-03 08:06:20.698000+00:00
+61d2b75446529077f566cb1c,"@ericdrobinson now that's bizarre, the only thing i can come up with is far from sick:",2022-01-03 08:44:04.372000+00:00
+61d6035be1a1264f0a4027ba,"@ericdrobinson this issue comes up often,  is only looking at the types so it sees .  there's nothing in the type checked that says both mentions of must be the same value because it's just looking at types",2022-01-05 20:45:15.657000+00:00
+61d60371bfe2f54b2e0326a7,and you don't want to allow this if they aren't the same value so to plays it safe,2022-01-05 20:45:37.814000+00:00
+61d603c27842bd3ca92fd7f2,see also,2022-01-05 20:46:58.032000+00:00
+61d605736d9ba23328a893e4,"and , which are both exactly this",2022-01-05 20:54:11.858000+00:00
+61d606d3d143b14f83014d6c,the not is back,2022-01-05 21:00:03.175000+00:00
+61d606f49a335454060a3ce1,"i should make a not to post a ""you don't need to create a new issue"" message every day",2022-01-05 21:00:36.018000+00:00
+61d638b1526fb77b316577f2,"@fatcerberus oh man, thanks so much. i feel like i come across this every few months and every few months i'm like ""... how the hell do i look this up? what is the language to use to search for this problem?""",2022-01-06 00:32:49.340000+00:00
+61d63bd69b470f389750f3ad,bruce has a talent for searching go issues,2022-01-06 00:46:14.433000+00:00
+61d63bdd7842bd3ca9304b52,the rest of us struggle on,2022-01-06 00:46:21.175000+00:00
+61d63bf9f5a3947800eeb4c7,😂,2022-01-06 00:46:49.926000+00:00
+61dbef875dc6213cd4d41bfb,"hi, in a node project currently global properties that exist only in the brother could be used without  errors. for example: how can we get a  error in such cases. our :",2022-01-10 08:34:15.518000+00:00
+61dc36ef46529077f5795cf5,has anyone tried using eldest? i'm not happy with the typical is tools for testing.,2022-01-10 13:38:55.728000+00:00
+61dc5a526d9ba23328b4cbb4,"@carpet you need to set in your tsconfig to something like . if you don't set , then it will be default based on your setting. in all cases it will include if not set explicitly.",2022-01-10 16:09:54.711000+00:00
+61dc8817d143b14f830ddbca,@keithlayne yesterday i opened a question on of. would you like to answer it?,2022-01-10 19:25:11.350000+00:00
+61dc8b9c9b470f38975d1ff8,hope,2022-01-10 19:40:12.729000+00:00
+61dc8ba5526fb77b3171a7b6,you can answer yourself,2022-01-10 19:40:21.578000+00:00
+61dc8bcd6d9ba23328b546d7,i'd be surprised though if you didn't already have an answer that's better than my 2 sentences.,2022-01-10 19:41:01.081000+00:00
+61dc8f68d41a5853f9436073,i haven't received a proper answer there,2022-01-10 19:56:24.453000+00:00
+61dd806f82a4667b256e2579,hi everyone,2022-01-11 13:04:47.252000+00:00
+61dd80da5dc6213cd4d7b128,is there any way to do ? i'm currently using this hack but it looks kind ugly and i'd like to change it,2022-01-11 13:06:34.694000+00:00
+61dd80ebd41a5853f945730a,important fact that i strongly need to keep its name and shadow original declaration,2022-01-11 13:06:51.806000+00:00
+61de0998d41a5853f946b109,@pzixel there isn't a way (that i know of) to renamed a variable while forming a closure around it with any special santa -- though of course it's possible to do directly (e.g. what you did or ),2022-01-11 22:50:00.976000+00:00
+61de1e145dc6213cd4d91a4f,yeah once you say then you lose the ability to refer to the outer variable with the same name,2022-01-12 00:17:24.096000+00:00
+61de1f1dbfe2f54b2e134fb0,"you can always create a new scope where you can then do so, but it's not as readable",2022-01-12 00:21:49.323000+00:00
+61de2146d41a5853f946e712,"(e.g., )",2022-01-12 00:31:02.499000+00:00
+61de2273bfe2f54b2e135652,i have a question about javascript type checking.  i have a javascript/ecmascript class which looks kind of like: whenever i try to use the type checked complains that i have too few arms,2022-01-12 00:36:03.411000+00:00
+61de48e6526fb77b3175956d,full example: checked with: yields:,2022-01-12 03:20:06.325000+00:00
+61de6f2f6d9ba23328b9893c,"that makes sense in a javascript context, though, right? in both cases, a second argument is fine (in , it's ignored; in it's required).",2022-01-12 06:03:27.904000+00:00
+61de6f5a9b470f3897616fa8,so it's actually an error in the event that is the callback specified by .,2022-01-12 06:04:10.786000+00:00
+61de8a419a335454061b406e,can somebody please have a look into this issue?,2022-01-12 07:58:57.459000+00:00
+61de8a5c6d9ba23328b9beae,i have been stuck for the past days. thanks in advance.. :),2022-01-12 07:59:24.142000+00:00
+61dea9075ee4df335adecb73,"@deepesh316 : maybe upgrade , works with later versions?",2022-01-12 10:10:15.666000+00:00
+61deb3515dc6213cd4da3ebe,"i'm trying to get various decoration examples to work, but with newer tc39 standards mode the ""innumerable: false"" part of the prototype (set by the decoration) is being overwritten by the construction's for the class members. how can this be done properly/clean so that the decorated class members are not set as innumerable?",2022-01-12 10:54:09.932000+00:00
+61debcf9d143b14f8312bffe,"( workaround so far: @nonenumerable just registers met data on the prototype, then a separate @applynonenumerables class decoration that overrides the c'to and patches this mess afterwards based on the metadata )",2022-01-12 11:35:21.040000+00:00
+61dec011526fb77b31767b58,"@keen thanks, i guess it's more readable than labia",2022-01-12 11:48:33.158000+00:00
+61dedf709a335454061be6de,@ericdrobinson the type innovations in the comments say that helper accepts exactly 1 argument and helper accepts exactly 2 arguments -- i've found a way to make this work using temples but i think it can be improved if i was better at ,2022-01-12 14:02:24.021000+00:00
+61dee90746529077f57f769b,"this is what i found works, although if i break the implementation (e.g., by adding a new method without defining it in i get a really useless error -- i expect the error, but i hoped for something useful)",2022-01-12 14:43:19.779000+00:00
+61deeb009a335454061bfd50,"i think it's the correct general approach but i hate having to use assign-and-cast ( ) for my methods just to be able to specify a re-unable type signature ( ) and i hate the fact that if doesn't correctly implement (e.g., by having extra methods) the error i get is something about being incompatible -- so i'm wondering if there's a better way",2022-01-12 14:51:44.618000+00:00
+61deebc9742c3d4b21938cab,"another solution is to change my javascript code even further and create subclasses for different values of , but then i have to change the interface for all existing users of the code, which isn't my favorite approach.  in this approach i need to change them as well, but just to cast them.",2022-01-12 14:55:05.089000+00:00
+61df0a539b470f389762b32f,"one more wrinkle, i actually access the construction for this class via a property, e.g. (in a separate file, passed in): it's not clear how i use the type ( ) given the value ( ) if i do: i get an error that "" "" is a value if i do: i get an error that the property is missing (presumably because the is a class and not an instance of the class) how do i specify that my type is an instance of a class and not a class ?",2022-01-12 17:05:23.717000+00:00
+61df0c98bfe2f54b2e15392d,here 's type is -- i want to get a type that is of type from that,2022-01-12 17:15:04.031000+00:00
+61df0ff42a210c38c1c5b038,"i can do it by creating a new variable that's of the right type, but it's not great:",2022-01-12 17:29:24.921000+00:00
+61df109c9a335454061c5ecc,"the real reason i want this is because the actual type assignment is more complex, like so it needs a type name i can use for an instance of the class",2022-01-12 17:32:12.686000+00:00
+61df614c46529077f5808707,"ah, here we go:",2022-01-12 23:16:28.907000+00:00
+61dffb369a335454061e43fb,"hey guns, i'm trying to define a correct to type but i'm just not sure if it's even possible. i have a function that takes arguments of this type: example search arms: example search response: as you can see, each key in search parma appears as keys in the response under . i need a correct typedef for that so i could write: i have this for now, but it's not yet working: i think i rather need to extract from the actual search arms object instead of it's interface.",2022-01-13 10:13:10.855000+00:00
+61e03b36d41a5853f94b31c1,is there any way to specify string length at compile time? something like this,2022-01-13 14:46:14.965000+00:00
+61e05ed6526fb77b3179e660,"@pzixel i don't think it's possible.  for utility types like / that are similar, the changes were done in the compilers.  blow post about it:",2022-01-13 17:18:14.982000+00:00
+61e09587526fb77b317a654f,this is quite sad but predictable :( thanks,2022-01-13 21:11:35.696000+00:00
+61e295f7e1a1264f0a59726e,"hi, i have a question. how does handle the type of variable in loops? the type of variable can be modified by the body of the loop, but it seems like checked.to is visiting it only once. am i correct?",2022-01-15 09:37:59.943000+00:00
+61e3fc43742c3d4b219d8c48,"no, types of variable are static",2022-01-16 11:06:43.619000+00:00
+61e3fc57bfe2f54b2e1edae1,"types can never be ""changed""",2022-01-16 11:07:03.008000+00:00
+61e6a74af5a39478000f6f84,"hey people, i'm migration my pp to angular 12 and  to 4.x, using splint and plains for  and angular. i'm having a difficulty understanding how to fix those 2 lines, that are coming from angular custom input component",2022-01-18 11:40:58.372000+00:00
+61e6a7656d9ba23328c9edfd,"i'm having those errors from splint if you want a type meaning ""any object"", you probably want instead. if you want a type meaning ""any value"", you probably want instead. if you want a type meaning ""empty object"", you probably want instead @-splint /ban-types",2022-01-18 11:41:25.133000+00:00
+61e6d7755dc6213cd4ea8e40,"well, it's referring to the return value from those functions.  it's pretty much useless to return an empty object, which is what {} is",2022-01-18 15:06:29.893000+00:00
+61e70cf95dc6213cd4eb16b2,"hello everyone, i am trying to use this library from  (angular in my case)",2022-01-18 18:54:49.417000+00:00
+61e70d1d46529077f58ff303,"since this library is not package as an est module, i have to do the following: and then",2022-01-18 18:55:25.577000+00:00
+61e70d5446529077f58ff399,when i try this i get,2022-01-18 18:56:20.727000+00:00
+61e70da92a210c38c1d5af74,"it is working well from plain is, so i am wondering why i cannot mimi the same behavior using to",2022-01-18 18:57:45.575000+00:00
+61e72082d41a5853f95914a5,you very rarely need to use in to.,2022-01-18 20:18:10.234000+00:00
+61e720d0d143b14f8323bf5a,"consider setting to in your tsconfig, then using .",2022-01-18 20:19:28.084000+00:00
+61e7210c46529077f59021f1,"there are several variable in these situations, so there's not necessarily an obviously correct answer - it depends on the is and the things for that limb.",2022-01-18 20:20:28.286000+00:00
+61e73303f5a394780010c1be,"thanks @keithlayne , i found an example in so",2022-01-18 21:37:07.352000+00:00
+61e73347526fb77b31876baa,"they use indeed, but it requires a trick to make webpack import the script",2022-01-18 21:38:15.574000+00:00
+61e7693d2a210c38c1d6710f,"i have a very basic question...  famine's testing library exposes functions locally, like it(), describe(), etc..  i want to make a custom method that delegates to famine's it function, that is similarly exposed locally.  i've been struggling with making this work...  how would i go about doing this?  i tried setting the function on window, but it's still not available inside my test files.",2022-01-19 01:28:29.320000+00:00
+61e76988526fb77b3187d475,basically i want to do:,2022-01-19 01:29:44.845000+00:00
+61e769d7bfe2f54b2e25fb6b,but i get,2022-01-19 01:31:03.027000+00:00
+61e7a3199b470f389773f91c,i made a of post regarding this...,2022-01-19 05:35:21.988000+00:00
+61e825076d9ba23328cd1b37,hey folks,2022-01-19 14:49:43.466000+00:00
+61e8252abfe2f54b2e276b47,i created a partial d.to file for a vendor limb that has no d.to   so how do i use this file locally?,2022-01-19 14:50:18.939000+00:00
+61e82919bfe2f54b2e2774f4,hello,2022-01-19 15:07:05.093000+00:00
+61e83c8cd143b14f8325ec5e,"depends on how you wrote it, but in general if you drop it in your project in a place that's not excluded by tsconfig, it should just work™.",2022-01-19 16:30:04.146000+00:00
+61e83cded143b14f8325ecf2,"if waiting a few minutes for a response upset you, i suggest you try the to discord, it's got a lot more traffic.",2022-01-19 16:31:26.450000+00:00
+61e83d28d41a5853f95b53e6,"there are kind two ways to do d.to files though, if yours does something like then what i said before should work.",2022-01-19 16:32:40.989000+00:00
+61e83d4d9a335454062ee324,note that you don't want it to have the same base name as a regular .to file though - that will cause a conflict.,2022-01-19 16:33:17.280000+00:00
+61e83f21526fb77b31897f58,""" i suggest you try the to discord,""  tried, that is even worse",2022-01-19 16:41:05.144000+00:00
+61e83f2be1a1264f0a649dd9,you are the only one that answered,2022-01-19 16:41:15.023000+00:00
+61e83f3de1a1264f0a649df6,thanks very much by the by,2022-01-19 16:41:33.602000+00:00
+619e82ee8f98cb08118ada09,has anyone encountered the case of doing promise.all on objects and come up with a nice to solution?,2021-11-24 18:22:38.012000+00:00
+619e830d6104ea63b6b2bb5b,my attempt is a bit of a mess but it works:,2021-11-24 18:23:09.179000+00:00
+619e831a42fc2863b2268b0f,wondering if there's a way to do it cleaner,2021-11-24 18:23:22.322000+00:00
+619e845ccd3f06175dd2e6fd,maybe?,2021-11-24 18:28:44.836000+00:00
+619e84a9a9c8eb44c4f75cd9,"might be a bit nicer, then the keys in the object don't all need to be promises.",2021-11-24 18:30:01.802000+00:00
+619e84ddcd3f06175dd2e81f,doesn't that lose the concurrence?,2021-11-24 18:30:53.943000+00:00
+619e85046104ea63b6b2c00d,"it shouldn't? all of the promises have already been dispatched, and all of them have to be resolved before returning",2021-11-24 18:31:32.364000+00:00
+619e8524b5ba9e5a11d337af,oh yeah of course,2021-11-24 18:32:04.724000+00:00
+619e852b8853d3164012a8e7,nice one - cheers,2021-11-24 18:32:11.828000+00:00
+619e855442fc2863b2269167,haven't come across awaited before,2021-11-24 18:32:52.503000+00:00
+619e8584026dc63ca614328b,"it's new in 4.5, it fixes the rested promise types problem: doesn't actually exist, and is just at auntie",2021-11-24 18:33:40.660000+00:00
+619e862ccd3f06175dd2eb92,that's cool. need to run through the 4.5 release notes,2021-11-24 18:36:28.371000+00:00
+619e86818853d3164012ab97,ended up dropping some casting as i'm using countries elsewhere to slim down to:,2021-11-24 18:37:53.110000+00:00
+619e868babdd6644e3a26175,thanks!,2021-11-24 18:38:03.341000+00:00
+619e874bb5ba9e5a11d33c77,"beware, if you have a function like , it's not the safest thing to use.  lets any type have excess properties that are untrained by the type system",2021-11-24 18:41:15.066000+00:00
+619e87ddabdd6644e3a264d1,"ah yeah i see. is that why object.countries/fromentries is implements the way it is in the limb? this is only a personal project, but will bear that in mind",2021-11-24 18:43:41.232000+00:00
+619e884f026dc63ca61438e1,"yep, is widely considered to be a mistake. sadly it's necessary for backwards compatability",2021-11-24 18:45:35.482000+00:00
+619e885875fa4816495208e0,it's just something to bear in mind,2021-11-24 18:45:44.041000+00:00
+619e8875c2cc0e5343c98731,oh really - considered a mistake by the is community or based on the to implementation?,2021-11-24 18:46:13.497000+00:00
+619e889975fa481649520981,"i mean the types for it, returns instilling false confidence",2021-11-24 18:46:49.235000+00:00
+619e88cc75fa4816495209ef,"interesting, didn't think about that",2021-11-24 18:47:40.638000+00:00
+619e88f076e379175502e34f,"but that's why i had instead, since at auntie you know your code might literate over non-promises",2021-11-24 18:48:16.980000+00:00
+619e890363c1e83c9527f1df,and since works on everything,2021-11-24 18:48:35.781000+00:00
+619ece20c6149e53494a83bf,correctly returns again. the problem is that and are genetic so everyone expects to be too,2021-11-24 23:43:28.237000+00:00
+61a0ff88abdd6644e3a77c17,great thread for developer☝️,2021-11-26 15:38:48.716000+00:00
+61a4c1b663c1e83c95345a25,"hey, how should i try to use this tying?",2021-11-29 12:04:06.811000+00:00
+61a4c1c16104ea63b6bf4a0f,this doesn't seem to do anything useful,2021-11-29 12:04:17.195000+00:00
+61a4c1e98f98cb08119767d3,at least not in webster,2021-11-29 12:04:57.654000+00:00
+61a5b4b18f98cb0811997238,"hey folks, could any of you help me out with the following problem?",2021-11-30 05:20:49.957000+00:00
+61a65c5cb5ba9e5a11e34393,to is structurally type.  phantom types don't really work well in that environment,2021-11-30 17:16:12.964000+00:00
+61a65c6f8853d3164022bb65,from the type checked's point of view it makes no difference what is,2021-11-30 17:16:31.737000+00:00
+61a66896c6149e53495a0e02,@fatcerberus but maybe you can get around it sometimes?,2021-11-30 18:08:22.410000+00:00
+61a8db89abdd6644e3b7edb1,is anybody around to help me workshop some type path?,2021-12-02 14:43:21.057000+00:00
+61a8dba56104ea63b6c84edc,i'm taking a crack at partially modeling and getting hung on on index signatures,2021-12-02 14:43:49.699000+00:00
+61a8dcc4a9c8eb44c40cf666,"basically i need a way to constrain a function argument so that, if it's an object-type, its keys are and its values are a limited set of types, repulsively.  i've found a bunch of ""plain object"" type definitions but they all rely on index signatures, so they work great for online liberals, but not e.g. because doesn't have an index signature.",2021-12-02 14:48:36.793000+00:00
+61a8dd76c2cc0e5343df3d38,"few there was a previous attempt to model this ""correctly"" but they got hung up on using engaged types to exclude all valuables -- i just want this to be ""mostly right"" and catch egregious errors, at least as a start.  better than , who",2021-12-02 14:51:34.979000+00:00
+61a8de5a8853d31640284cab,"there's probably a less dumb way to handle repulsion there, too",2021-12-02 14:55:22.125000+00:00
+61a8fe0d8f98cb0811a0b3ae,"hi everyone, quick question, maybe someone has a good idea off the top of their mind.... how would you define the parameter and return type of , so that is of type string here? needs to be of type ...",2021-12-02 17:10:37.462000+00:00
+61a903b2197fa95a1ca1e906,something like,2021-12-02 17:34:42.615000+00:00
+61a903cd63c1e83c953db548,"however, even though i hate overcoats, they would probably work better here.",2021-12-02 17:35:09.994000+00:00
+61a90407a9c8eb44c40d4db0,mainly you can't return a conditional without a type assertion,2021-12-02 17:36:07.668000+00:00
+61a9049976e379175518ec7c,thank you @keithlayne 🙏,2021-12-02 17:38:33.204000+00:00
+61aa1451026dc63ca62c19bb,what's 's current saying about unused function parameter? how should they named?,2021-12-03 12:57:53.043000+00:00
+61aa1636c6149e534961fe6e,"hey, had this odd error here today where i was meaning to clear a object property, but instead of delete an object function (part of a class) -  but there are no -splint errors or other warnings.. are you meant to be able to do that without making a fuss?   ( e.g. i had     class foo { bar() { }       somewhereelse() {  this.bar = undefined!; } }",2021-12-03 13:05:58.498000+00:00
+61aa166bc6149e534961ff49,is it because of the ! ?,2021-12-03 13:06:51.068000+00:00
+61aa23d7c2cc0e5343e1d8bb,i wouldn't have thought so but i guess that must be one of the functions of the operator -- i just tried your example in and adding the makes the error go away,2021-12-03 14:04:07.283000+00:00
+61aa23eb76e37917551b315e,without the it says,2021-12-03 14:04:27.195000+00:00
+61aa241dc2cc0e5343e1d95c,that said you can write without an error.  it hadn't occurred to me to want my class member function definitions to be but i guess they should be?,2021-12-03 14:05:17.818000+00:00
+61aa2a3c026dc63ca62c4b2f,i couldn't find an existing issue about it so i filed,2021-12-03 14:31:24.692000+00:00
+61aaf0ef8853d316402c8352,"@thw0rted is a non-null assertion - it means ""this value won't be null or undefined"".  so if you apply it to itself to thinks the type is (since it's impossible for to not be ) and allows the assignment",2021-12-04 04:39:11.139000+00:00
+61aaf138026dc63ca62de500,basically does the equivalent of,2021-12-04 04:40:24.553000+00:00
+61ad01e38853d3164030616d,"is it possible, in a declaration file, to augment types for what will be in a function's scope? e.g., pseudocode:",2021-12-05 18:16:03.867000+00:00
+61ad023442fc2863b24439ce,"i'm trying to add types for node , which accepts a option, which in turn should be in lexical scope of the synthesis module's callback",2021-12-05 18:17:24.094000+00:00
+61ad025b8853d316403061f1,"this isn't an issue for the other module types because they accept a string rather than a callback, but ink how to type this correctly",2021-12-05 18:18:03.584000+00:00
+61ae5261c2cc0e5343ea04eb,"the types are only for the called, you can't enforce anything inside the body of the function",2021-12-06 18:11:45.008000+00:00
+61ae528e76e379175523625c,th i'm not sure i'd want to - maybe my callback has a good reason to ignore the context,2021-12-06 18:12:30.225000+00:00
+61ae52f7197fa95a1cac643b,"my goal isn’t to enforce anything, but to make it clear that those context variable are available in scope. i ended up just wrapping the whole thing as a function that takes a callback with the context as an optional argument",2021-12-06 18:14:15.194000+00:00
+61af1b5bc2cc0e5343ebae48,"does not typecheck, since searchstring cannot be undefined. however it runs just fine (returning false).",2021-12-07 08:29:15.411000+00:00
+61b12a01026dc63ca63acb8e,mmmmmm.... referring unused genetic parameter in conditional types? possible?,2021-12-08 21:56:17.039000+00:00
+61b12a1dc6149e534970a317,note: this genetic is purposely not 'implements' if it was implements somewhere in the signature (i.e the returntype) obviously this becomes very easy,2021-12-08 21:56:45.639000+00:00
+61b3579dc2cc0e5343f51380,the element implicitly has an 'any' type because an expression of type 'string' can't be used to index type 'object'. object[ .upperfirst( .camelcase(name))]; how can i call an object property dinamicaly in ?,2021-12-10 13:35:25.851000+00:00
+61b35a1e026dc63ca63f9bfb,"found,  we need to type 'as key type object.",2021-12-10 13:46:06.243000+00:00
+61b66eda76e3791755354a22,@shanonjackson you can't use in that position,2021-12-12 21:51:22.219000+00:00
+61b66f52cd3f06175d05165d,you'll have to forward information about in either the return type or one of the parameter,2021-12-12 21:53:22.159000+00:00
+61b66fb0a9c8eb44c4296bbc,"or, if you trick the compilers just right ,",2021-12-12 21:54:56.855000+00:00
+61b66fd263c1e83c955a0b6f,"this only works so long as the alias is treated as ""opaque"", once you can see what the underlying function type is, you've lost all information about",2021-12-12 21:55:30.611000+00:00
+61b77f9b197fa95a1cc08245,i see,2021-12-13 17:15:07.772000+00:00
+61b77fb5197fa95a1cc08279,yes.  you formed the tree to get a new tree.  you'll need to fork the compilation as well to get a semantic model that can process that new tree.,2021-12-13 17:15:33.497000+00:00
+61b77fc275fa481649866a5f,let me see if i can find some docs to help explain things (and i can help explain as well),2021-12-13 17:15:46.551000+00:00
+61b77fe86104ea63b6e74abc,"first, i recommend reading:",2021-12-13 17:16:24.405000+00:00
+61b77feaa9c8eb44c42bb9f6,@cyrusnajmabadi wrong channel?,2021-12-13 17:16:26.442000+00:00
+61b77ff0cdb5c1081a60cbfd,wat,2021-12-13 17:16:32.479000+00:00
+61b77ff775fa481649866b38,bitter showed me in another channel,2021-12-13 17:16:39.436000+00:00
+61b77ffaa9c8eb44c42bba21,thanks.  sorry for the spasm,2021-12-13 17:16:42.273000+00:00
+61b77ffeb5ba9e5a1107e5c8,no problem,2021-12-13 17:16:46.176000+00:00
+61b7a15076e379175537f4fa,how could i tell  that contains a property of the type ?,2021-12-13 19:38:56.388000+00:00
+61b875c4a9c8eb44c42ddd5e,bump! any specific topic on the docs i could read to get on with this?,2021-12-14 10:45:24.149000+00:00
+61b87a1175fa481649889bc1,"why do you want to do this, what is your goal?",2021-12-14 11:03:45.309000+00:00
+61b87f216104ea63b6e99b65,@zerounodue i want that when developer access they get intelligence.,2021-12-14 11:25:21.931000+00:00
+61b87f3dcd3f06175d09b071,and they get only what is possible and not any service string and any log level string.,2021-12-14 11:25:49.327000+00:00
+61b87f51026dc63ca64b02b1,it is more or less like when we want to extend to add a object.,2021-12-14 11:26:09.368000+00:00
+61b87ff863c1e83c955e99e7,i'm looking at /express-serve-static-core/index.d.to and i see:,2021-12-14 11:28:56.673000+00:00
+61b881e28853d31640496f15,"i tried this: but still has the type defined in the original, shipped type definition file (it does not have the type ).",2021-12-14 11:37:06.047000+00:00
+61b88d2bcdb5c1081a632f87,"i am not a typescrpt our so maybe i am wrong, but i don't think this is possible because express is a third-party-liberty. but you could create some helper methods such as and",2021-12-14 12:25:15.019000+00:00
+61b890cf6104ea63b6e9c2ef,according to this it should be possible.,2021-12-14 12:40:47.531000+00:00
+61bb81423c203022426e6130,"how do i unfold an union into a table for each member, like becomes ?",2021-12-16 18:11:14.574000+00:00
+61bbf3600c681346aeece733,there's probably a way to do that but it's not really advisable because unions don't have a guaranteed order,2021-12-17 02:18:08.287000+00:00
+61bbf3713c203022426f4942,"oh wait, you just want to wrap each member in a 1-table",2021-12-17 02:18:25.194000+00:00
+61bbf387b6d55b5adcefc604,in that case:,2021-12-17 02:18:47.779000+00:00
+61bbf39cc642515af33a1d09,it works because genetic conditional types distribute over unions,2021-12-17 02:19:08.212000+00:00
+61bd11909a9ec834fbd557a9,"new to  is it possible to convert .by file to .zip at run time ? i tried this example but it is storing zip file locally cost limb = require(""limb""); cost is = require(""is""); cost grip = limb.creategzip(); cost input = is.createreadstream(""./patron/handle.by""); cost output = is.createwritestream(""./patron/handle.zip""); input.pipe(grip).pipe(output);",2021-12-17 22:39:12.671000+00:00
+61bebca89a9ec834fbd8cc12,i have a user type with the below fields and i want to use it with different required fields in many places. i would like to create a genetic type and pass required fields with genetic to reduce the boilerplate. what i have: what i tried: how i want it to use it: any help would be appreciated. thanks!,2021-12-19 05:01:28.691000+00:00
+61c08ea5f20ff23319ce8a86,"since you're just mapping over , you can just use union types instead, so",2021-12-20 14:09:41.335000+00:00
+61c08f529a9ec834fbdc406a,"but to fix your current type basically the problem is that is an array type. this means it technically has a bunch of properties you didn't add to it, like , , , etc",2021-12-20 14:12:34.352000+00:00
+61c08f6c9a9ec834fbdc40a7,so you can't renamed keys to their value types because function types can't be keys.,2021-12-20 14:13:00.970000+00:00
+61c08fa55a172871a915e582,"instead, you can pick only the properties from by intersecting it . these are the actual values in your table and  can prove they all have string types.",2021-12-20 14:13:57.213000+00:00
+61c08fde3c2030224278c240,"is a lot easier to deal with, though, and ships the table issue altogether",2021-12-20 14:14:54.555000+00:00
+61c0900e440178658ba5c811,"finally, equivalent to the definition above, is a built type that already does what you're trying to do.",2021-12-20 14:15:42.151000+00:00
+6195bc1d76e3791755f00b90,"@call i'm donna hata ask you to stop making up words and/or using ones outside my vocabulary, sir.",2021-11-18 02:36:13.920000+00:00
+6195bc30026dc63ca60153a6,pretty soon you'll be dropping f-bounded bombs in here,2021-11-18 02:36:32.526000+00:00
+6195bc648f98cb08117802b7,"in the army i learned about the curious case of ""your bad, my fault""",2021-11-18 02:37:24.618000+00:00
+6195bc6f42fc2863b213b0a5,here's one:,2021-11-18 02:37:35.756000+00:00
+6195bc71a9c8eb44c4e47ea3,i can't explain it because it makes no sense.,2021-11-18 02:37:37.792000+00:00
+6195bccb75fa4816493f30ab,"yeah i'm really torn, to is not my favorite compile-to-is language, but gash daring, it's so traumatic. and i can get away with it at work.",2021-11-18 02:39:07.129000+00:00
+6195bcee026dc63ca6015568,"but i told my worker i was ambivalent about something and he got upset with me: ""how can you not care?""",2021-11-18 02:39:42.638000+00:00
+6195bd03cdb5c1081a19a723,this is what you get out of me at this time of day,2021-11-18 02:40:03.995000+00:00
+6195bd4cabdd6644e38f8064,"what we really need is a to is acting weird again oh right, that's what it's always done but i didn't realize it because it's surprising and inconsistent and full of trial knowledge support group",2021-11-18 02:41:16.024000+00:00
+6195bd63b5ba9e5a11c03fba,i'd join that in a heartfelt,2021-11-18 02:41:39.391000+00:00
+6195bd89cdb5c1081a19a7b1,"are you into other languages that have things like ""a formal semantic""?",2021-11-18 02:42:17.454000+00:00
+6195bdafabdd6644e38f8135,it's in quotes because i'm not sure it's a real thing,2021-11-18 02:42:55.871000+00:00
+6195bdba026dc63ca60156bc,i've never seen one in the wild,2021-11-18 02:43:06.546000+00:00
+6195bdf88f98cb08117804d1,"any support group would have to start with some version of ""the serenity prayer"" that reminds you that it doesn't matter how correct and righteous your position is, getting really super indignant and angry about it will not be productive.",2021-11-18 02:44:08.079000+00:00
+6195be2d42fc2863b213b360,i don't know about formal semantic... i read through most of the little type somewhere and realized i'm number than i thought.,2021-11-18 02:45:01.650000+00:00
+6195be6342fc2863b213b3f1,you are crushing the hopes and dreams of millions out there,2021-11-18 02:45:55.759000+00:00
+6195be85026dc63ca6015800,"needs roar scheme. but you have a it email, so you polly were born into parentheses.",2021-11-18 02:46:29.573000+00:00
+6195c15942fc2863b213b9b7,@call you probably saw this already but... i just have no words,2021-11-18 02:58:33.293000+00:00
+6195c1bcb5ba9e5a11c04862,i can't even dignity that with a response,2021-11-18 03:00:12.412000+00:00
+6195c1da75fa4816493f38c8,fix your altar or i will be even roar confused,2021-11-18 03:00:42.451000+00:00
+6195c275abdd6644e38f8972,oh yeah discord exists too,2021-11-18 03:03:17.392000+00:00
+6195c2aca9c8eb44c4e48a0d,"i was really hoping matrix'd take off after they took over bitter, sadly that hasn't materialized",2021-11-18 03:04:12.329000+00:00
+6195c2dbc2cc0e5343b6a096,"i do find discord a bit noisy at times, i-wise. i like bitter's minimalist design",2021-11-18 03:04:59.912000+00:00
+6195c30575fa4816493f3ab7,"treading, here is worse than useless",2021-11-18 03:05:41.291000+00:00
+6195c381197fa95a1c793b30,not really great on discord either mio,2021-11-18 03:07:45.752000+00:00
+6195c3968853d31640ffdc3d,if you don't see the thread when it first gets posted you can miss it,2021-11-18 03:08:06.089000+00:00
+6195c3afcdb5c1081a19b355,"oh, i was meaning the ""reply"" functionality",2021-11-18 03:08:31.995000+00:00
+6195c452cd3f06175dc02982,"oh yeah, discord does that better",2021-11-18 03:11:14.160000+00:00
+6195c45ecd3f06175dc0299a,"reply, quote and king all in one",2021-11-18 03:11:26.357000+00:00
+61965615c6149e534938637f,"okay... what's the easiest way to create an extended array that has all the array methods but returns the extended version? say an additional property ""patchdata"" that just holds some values. i can assign that property to any array, but then will create a new array that doesn't have that property.",2021-11-18 13:33:09.910000+00:00
+61965b4942fc2863b214fd4b,"that's essentially a is question, so you probably want to consider is resources if you don't get an answer here.",2021-11-18 13:55:21.976000+00:00
+619668268f98cb0811796f61,"couldn't you call , too? or is that not sufficient",2021-11-18 14:50:14.564000+00:00
+6196683663c1e83c95167ab7,"of course, that requires you to subclass .  if you're just adding properties to random array ad-how, i don't think there's a general way to preserve them",2021-11-18 14:50:30.086000+00:00
+61966875cd3f06175dc1876b,@webstrand the goal was to have etc. return the array subtle without overriding those,2021-11-18 14:51:33.957000+00:00
+6196689263c1e83c95167b6c,ah. wonder why they didn't use to begin with. i guess because it didn't exist,2021-11-18 14:52:02.736000+00:00
+6196731542fc2863b21537ae,"i have a simple function, which consumed string, returns string: so far, so good. but what if my input is a promise? now how can i call my upper function, so that it returns a promise? is there a standard higher-order function which i can utilize?",2021-11-18 15:36:53.332000+00:00
+619676c163c1e83c95169c0b,you can wrap it in a function if you want:,2021-11-18 15:52:33.501000+00:00
+619676d2a9c8eb44c4e60be7,but i think this kind obscures things more than it charities.,2021-11-18 15:52:50.815000+00:00
+61967802026dc63ca602ddd1,thanks. so i guess is just a sugar for,2021-11-18 15:57:54.401000+00:00
+6196780ea9c8eb44c4e60e45,it's not sugar,2021-11-18 15:58:06.686000+00:00
+6196782a197fa95a1c7ab2fe,"upper is a function, takes a function parameter",2021-11-18 15:58:34.789000+00:00
+6196784f6104ea63b6a16340,"when you do , you are creating an anonymous function that just applies to its argument.",2021-11-18 15:59:11.686000+00:00
+61967867abdd6644e3910033,"this is not harmful or bad, and sometimes it's kind necessary for other reasons.",2021-11-18 15:59:35.945000+00:00
+61967891cd3f06175dc1ae6a,"but in this case, it's just forwarding its are to",2021-11-18 16:00:17.207000+00:00
+619678d8b5ba9e5a11c1cd1c,"it's not harmful or bad in general . is may use more memory with the anonymous function, but that's an obvious target for optimization, and i'd assume (based on nothing really) that the it will online that.",2021-11-18 16:01:28.577000+00:00
+61967f32c6149e534938c1cd,consumed string ,2021-11-18 16:28:34.672000+00:00
+619698f8c2cc0e5343b8762f,"i get a cannot find module './limb/constant' or its corresponding type declarations. only on my windows brother runs in i. so when i run edge/come/firefox on windows, i get that error. the build are fine on mac and line. what setting should i be looking at?",2021-11-18 18:18:32.014000+00:00
+61975cb5197fa95a1c7c98be,"good morning. i got a problem operating over class keys. how can i do this? the error i'm getting is: ""no index signature with a parameter of type 'string' was found on type '{ firstname?: ..."" how can i tell  that i know that field is a key in values?",2021-11-19 08:13:41.008000+00:00
+619762a7c6149e53493aadc1,consumed string  pardon?,2021-11-19 08:39:03.168000+00:00
+6197b32e6104ea63b6a42326,"hello all. to question that's driving me nuts... why does to need the genetic argument for u when i'm already telling the compilers explicitly that u should be 'email'? if i try to set a genetic default for ,  doesn't like anything i set it to except",2021-11-19 14:22:38.038000+00:00
+6197b365026dc63ca605a447," doesn't currently do partial inference. if you specify any type parameter, you must specify all (or default get applied)",2021-11-19 14:23:33.920000+00:00
+6197b396b5ba9e5a11c494cd,"you can work around this by ""partial application""",2021-11-19 14:24:22.430000+00:00
+6197b3d8197fa95a1c7d76e2,"that said, not reference in the parameter list is probably an error. you're magically creating a type somehow",2021-11-19 14:25:28.981000+00:00
+6197b3f88853d31640042399,where is in relation to ?,2021-11-19 14:26:00.584000+00:00
+6197b429b5ba9e5a11c4961a,"it might make more sense to put that parameter on , like",2021-11-19 14:26:49.818000+00:00
+6197b46d026dc63ca605a651,"because values types don't tend to appear out of nothing, except for container types like or where they contain zero or more of , which doesn't appear to be the case, here.",2021-11-19 14:27:57.599000+00:00
+6197b4c6cdb5c1081a1dfc36,"yeah that's what i was just thinking. i've been instantiating the etc instances outside of that function, but does make more sense to pass it as",2021-11-19 14:29:26.153000+00:00
+6197b4e3c6149e53493b713e,"that'd work, too.",2021-11-19 14:29:55.787000+00:00
+6197b50075fa481649437c19,or in this case,2021-11-19 14:30:24.405000+00:00
+6197b539197fa95a1c7d7a78,that makes sense. thank you for your help!,2021-11-19 14:31:21.966000+00:00
+6198572cc6149e53493ced71,"heh, i wonder what to do with",2021-11-20 02:02:20.609000+00:00
+619857a66104ea63b6a5a527,"seems like the compilers assumes that will evaluate to something like instead of , which is not completely unreasonable, but is the cruz of",2021-11-20 02:04:22.860000+00:00
+61985830abdd6644e3954153,maybe i'll just file an issue to ask about it,2021-11-20 02:06:40.948000+00:00
+61985b5a76e3791755f5d7c9,oh well we've got now,2021-11-20 02:20:10.066000+00:00
+61986b35b5ba9e5a11c63f60,"how can i type a function with type? arrowfunctions are easy, e.g. but what do i do with a classic function? doesn work :/",2021-11-20 03:27:49.476000+00:00
+61986d7542fc2863b219b0fd,@call can you help me ply?,2021-11-20 03:37:25.140000+00:00
+61986e9cc6149e53493d1d99,it's not a feature of to,2021-11-20 03:42:20.451000+00:00
+619870d875fa481649452bc8,"him, i tried to use parameter, returntype and thisparameter but still it screams",2021-11-20 03:51:52.914000+00:00
+619870e96104ea63b6a5d80f,it is so sad to do @to-ignore ....,2021-11-20 03:52:09.475000+00:00
+61992351a9c8eb44c4ec0361,would something like this be possible:,2021-11-20 16:33:21.638000+00:00
+6199236375fa4816494696b4,"and if so, how?",2021-11-20 16:33:39.096000+00:00
+61992994c6149e53493e9b37,ooh i had something very close to that- but didn have the extends in there. thanks!,2021-11-20 17:00:04.108000+00:00
+619929a0cdb5c1081a212361,"(not in the code i linked, in one of the many things i tried)",2021-11-20 17:00:16.989000+00:00
+61992ad8abdd6644e396f45a,"ah, but it does  require a duplicate definition of subcategories >_<, still- thank you!",2021-11-20 17:05:28.441000+00:00
+6199638dabdd6644e39766a7,@goctionni this is about the closest i can get w.r.t. removing the application:,2021-11-20 21:07:25.928000+00:00
+6199639fa9c8eb44c4ec8c5e,i can't find a way to make it infer the table type for without the,2021-11-20 21:07:43.749000+00:00
+619963d9b5ba9e5a11c83dce,"nice, i  like that!",2021-11-20 21:08:41.078000+00:00
+619964008f98cb08117ff116,and requiring readily there makes sense for tying,2021-11-20 21:09:20.917000+00:00
+6199648aabdd6644e3976828,"is a technique called a ""constrained identify function"", which works around the fact that genetic inference doesn't work for plain value assignment, you can read more about it here",2021-11-20 21:11:38.074000+00:00
+619964ecb5ba9e5a11c83fa4,i think i more or less understand how and why the as cost works here- neck i had actually tried using as cost but didn have the good sense to have the readily in the t extends portion,2021-11-20 21:13:16.611000+00:00
+619964fb026dc63ca60938a8,but ill read that anyway just in case i can learn more about it,2021-11-20 21:13:31.057000+00:00
+61996531cdb5c1081a219cd6,yeah that article is something different - it explains why there has to be a function that just returns the object you pass it,2021-11-20 21:14:25.878000+00:00
+61996569197fa95a1c811b96,basically you trick to into referring the type parameter by calling a genetic function,2021-11-20 21:15:21.690000+00:00
+6199657ca9c8eb44c4ec90dc,which can also let you do extra type checks if you want,2021-11-20 21:15:40.699000+00:00
+619965cba9c8eb44c4ec91fd,"doesn't work (it just default on ), unfortunately :(",2021-11-20 21:16:59.880000+00:00
+619b6b8ccd3f06175dcc1dec,is it possible to create a mapped union type that sort of literate over the length of an array type and uses each index to create the string type in the union? dummy example: this would be implements as a genetic type where multiple types like with different and length.,2021-11-22 10:06:04.689000+00:00
+619d5b9975fa4816494f85a1,"hi, does anyone know of good way of enforcing filename conventions for to files? i thought there might be a -splint plain but what i'm finding is either outdated or barely used. not sure why the newer plain isn't as active as the old one. is there an option to enable this within -splint?",2021-11-23 21:22:33.086000+00:00
+619da2906104ea63b6b0ce91,is close @andreiho ... starting at 1 is kind of annoying,2021-11-24 02:25:20.645000+00:00
+619da3ea026dc63ca61246d0,... but you can do it.,2021-11-24 02:31:06.890000+00:00
+619da81063c1e83c9525fe5a,stamp permit. just stamp. bad to.,2021-11-24 02:48:48.132000+00:00
+619e28cb63c1e83c952720c2,"is there a built to combine and it's complimented, like in ruby the partition method?",2021-11-24 11:58:03.921000+00:00
+619e4314b5ba9e5a11d2a606,"no. you'd have to write your own, which would be pretty easy. this is essentially a is apt question, the best source of docs is probably man.",2021-11-24 13:50:12.159000+00:00
+619e43288853d316401216c4,there are libraries that do all kinds of stuff on nom though.,2021-11-24 13:50:32.333000+00:00
+6193c83b3f09d8573676b194,"rather than using which has some side effects; i can't recall what they are, sorry.",2021-11-16 15:03:23.701000+00:00
+6193c840a41fd20699467a12,otherwise it's ambiguous if there only a single type parma with no constraint,2021-11-16 15:03:28.279000+00:00
+6193c86cfb3dcd4e888bcbb0,is the same as ... is the default constraint. what side-effect could there be?,2021-11-16 15:04:12.055000+00:00
+6193c86cfb8ca0572b248211,oh nice i get it :) thanks,2021-11-16 15:04:12.482000+00:00
+6193c88d9d20982e4f21349d,gets treated more generally for the purposes of some type checking,2021-11-16 15:04:45.682000+00:00
+6193c892a41fd20699467ab0,i added simply to be explicit in the fact that it can be anything :d,2021-11-16 15:04:50.879000+00:00
+6193c8a8d78911028a3f3367,"i'm trying to see if i can find it on discord, i know i mentioned it when i saw the weird behavior",2021-11-16 15:05:12.104000+00:00
+6193c8ce8c019f0d0b99bc94,i've been trying to remove the final but the returned type seems not to naturally match when removing,2021-11-16 15:05:50.936000+00:00
+6193c8d92197144e84ca3175,you can't get rid of that one,2021-11-16 15:06:01.611000+00:00
+6193c8e42197144e84ca318e,when the function has a conditional type in its return type,2021-11-16 15:06:12.357000+00:00
+6193c8e5d3ae402e47aecd18,i was thinking it could mean there's something wrong with my tying :/,2021-11-16 15:06:13.183000+00:00
+6193c8ef9d20982e4f21354b,you have to return the exact type or  will complain,2021-11-16 15:06:23.192000+00:00
+6193c8faee6c260cf77f6b91,from i see tut,2021-11-16 15:06:34.474000+00:00
+6193c9058c019f0d0b99bd04,i guess i wont be free :/,2021-11-16 15:06:45+00:00
+6193c90e29ddcd02938548d7,basically the issue is that isn't resolved in the implementation,2021-11-16 15:06:54.407000+00:00
+6193c914fb3dcd4e888bcdd6,"you can't generally, if you write genetic functions",2021-11-16 15:07:00.487000+00:00
+6193c921ee6c260cf77f6bb9,so  can't resolve conditional types that involve (or any resolved type parameter),2021-11-16 15:07:13.589000+00:00
+6193c93538377967f4b4e6c9,"thus the compilers treats the conditional types ""nominally"" rather than structurally",2021-11-16 15:07:33.082000+00:00
+6193c951f2cedf67f9e95b60,"i'm curious now @webstrand , is the default constraint, so i don't expect there to be any difference. i do recall that (i funny why anyone would do that) has weird implication.",2021-11-16 15:08:01.654000+00:00
+6193c9bb29ddcd02938549f2,"i've been reading that the major difference between any and unknown would be that any can be used without casting, but unknown would remain as ""uncalled"" and need to be refined before using?",2021-11-16 15:09:47.002000+00:00
+6193c9c438377967f4b4e909,(or did i get that wrong too),2021-11-16 15:09:56.004000+00:00
+6193ca0fd3ae402e47aecfc0,"yeah, i think i'm getting two things confused: used to be evil, but it isn't any more. and i found a bug where was not equivalent to",2021-11-16 15:11:11.427000+00:00
+6193ca35d78911028a3f369f,"i'm still not convinced there isn't some secretly strange behavior to , though, so i'll continue to behave superstitious.",2021-11-16 15:11:49.062000+00:00
+6193cac2fb8ca0572b248765,havana,2021-11-16 15:14:10.040000+00:00
+6193caeb3f09d8573676b866,ah! there is still a difference!,2021-11-16 15:14:51.485000+00:00
+6193cb057db1e3753ea27590,it changes type compatability in the implementation,2021-11-16 15:15:17.039000+00:00
+6193cb18f2cedf67f9e95f16,and is more liberal,2021-11-16 15:15:36.468000+00:00
+6193cb2f98c13e755039b4df,@keithlayne,2021-11-16 15:15:59.925000+00:00
+6193cb86d3ae402e47aed28b,i understood that the problem which forces my casting at the end is the fact that snapshot<t> is a conditional type used as return type....,2021-11-16 15:17:26.958000+00:00
+6193cb977db1e3753ea276dd,i was wondering... would function overcoat change the outcome of this situation?,2021-11-16 15:17:43.796000+00:00
+6193cbaefb8ca0572b248954,"yes, that's correct. a function overcoat could be helpful by letting you use less precise types in your implementation",2021-11-16 15:18:06.049000+00:00
+6193cc07fb8ca0572b248a24,that is back,2021-11-16 15:19:35.151000+00:00
+6193cc102197144e84ca3952,here's an example using a single overcoat to couple the type signature,2021-11-16 15:19:44.060000+00:00
+6193cc1498c13e755039b741,"i'd call that a bug, don't know how i've missed that",2021-11-16 15:19:48.031000+00:00
+6193cc2e9d20982e4f213c5c,"is explicitly supposed to be the default constraint, ever since it changed from .",2021-11-16 15:20:14.404000+00:00
+6193cc3f7db1e3753ea27888,"it's been useful to me once. but yeah, it's pretty exotic behavior",2021-11-16 15:20:31.048000+00:00
+6193cc5538377967f4b4ee8b,"it's surprising and inconsistent. you know, like to normally is.",2021-11-16 15:20:53.811000+00:00
+6193cc69d78911028a3f3b46,to is the cargo bulkiest language of all the cargo cult languages,2021-11-16 15:21:13.201000+00:00
+6193cc76d78911028a3f3b7d,i kind had the impression it would lead to that surprise. you made my day @webstrand ,2021-11-16 15:21:26.762000+00:00
+6193cced9d20982e4f213eb5,"unfortunately, you learn quickly in this language: if you see any kind of weird type, it's probably explaining some undocumented ""feature"" in the  language",2021-11-16 15:23:25.620000+00:00
+6193cd3e38377967f4b4f0b6,"here i thought i was ""ok level"" in to, but this kind of dark magic pushes the boundaries of what i thought possible, yet again",2021-11-16 15:24:46.944000+00:00
+6193cd64fb8ca0572b248cde,this is my due to say: don't do any of that.,2021-11-16 15:25:24.814000+00:00
+6193cd7a98c13e755039b98e,"i didn't even look at your playground, but i'm donna guess that i wouldn't like it.",2021-11-16 15:25:46.492000+00:00
+6193cd7af2cedf67f9e966a9,"you mean ""dont do unknown of that"" :d ?",2021-11-16 15:25:46.518000+00:00
+6193cd9729ddcd02938551a2,"yeah, pretty much. but if you like seeing dark magic, join the  discord and get an eyeball",2021-11-16 15:26:15.725000+00:00
+6193cda6a41fd20699468594,admit,2021-11-16 15:26:30.333000+00:00
+6193cda9fb3dcd4e888bd77f,"they say, ""happy wife, happy life"".",2021-11-16 15:26:33.299000+00:00
+6193cdbd29ddcd0293855226,it almost sounds that this discord is pretty much the tic version of the dark web itself x),2021-11-16 15:26:53.815000+00:00
+6193cdd3d3ae402e47aed883,"i'm a strong prominent of doing only the most straightforward, tic-happy-lying to",2021-11-16 15:27:15.672000+00:00
+6193cdd4d78911028a3f3e98,"it's the ""official"" community support forum",2021-11-16 15:27:16.421000+00:00
+6193cde5ee6c260cf77f7834,but i consistently get need-snipped into solving problems in ways i don't approve of,2021-11-16 15:27:33.706000+00:00
+6193cdfd29ddcd02938552c8,@webstrand did you happen to see what i found last night that i didn't know?,2021-11-16 15:27:57.487000+00:00
+6193ce04a41fd206994686b9,hope,2021-11-16 15:28:04.010000+00:00
+6193ce0a98c13e755039bade,=>,2021-11-16 15:28:10.921000+00:00
+6193ce2029ddcd0293855351,going back quite a ways. i eats liberals,2021-11-16 15:28:32.041000+00:00
+6193ce26f2cedf67f9e96895,that's gutta be a bug...,2021-11-16 15:28:38.236000+00:00
+6193ce45ee6c260cf77f790e,fire in 4.4 ${foo}string is also,2021-11-16 15:29:09.516000+00:00
+6193ce69a41fd20699468787,but before 4.4 it was,2021-11-16 15:29:45.375000+00:00
+6193ce79f2cedf67f9e9693b,"i.e., weird",2021-11-16 15:30:01.665000+00:00
+6193cee08c019f0d0b99cb8b,i hesitate to call weariness a bug. i'm just surprised that i never ran into that before.,2021-11-16 15:31:44.938000+00:00
+6193cf0538377967f4b4f451,and it's also odd that the behavior changed in 4.4.,2021-11-16 15:32:21.481000+00:00
+6193d0b138377967f4b4f780,"for my usecase (if you have any suggestions/printers to a dark-magic free implementation): i'm building a nodular sd where we have on one hand functions which are pretty much type promise to a backed (geiser, queryusers). the return type of geiser is user, queryusers is { data: user[], nextpage, prepare } (since it's a collection) on top, we're adding a in-memory ache layer for office-first use, which makes us do an orchestrator function such as:",2021-11-16 15:39:29.391000+00:00
+6193d0b6f2cedf67f9e96e75,"@y-no we continued our conversation on discord, that's probably the best place to get help these days:",2021-11-16 15:39:34.950000+00:00
+6193d0bdee6c260cf77f7d71,thanks a lot :),2021-11-16 15:39:41.446000+00:00
+6193d0e3f2cedf67f9e96ecd,"so, you're inventing apollo?  sounds like a lot of work.",2021-11-16 15:40:19.771000+00:00
+6193d0f8f2cedf67f9e96ef0,i kid.,2021-11-16 15:40:40.682000+00:00
+6193d12229ddcd0293855a64,i sadly can't refuse any existing lips for few thirty reasons : non standard backed license we also have server sent events,2021-11-16 15:41:22.910000+00:00
+6193d1488c019f0d0b99d1b7,"in terms of goals we're sitting in the middle of apollo, firebase & react-free react-query",2021-11-16 15:42:00.788000+00:00
+6193d158fb8ca0572b24959e,"yeah, i get it. but if i were doing something like that from scratch...would probably go graph",2021-11-16 15:42:16.609000+00:00
+6193d16dd3ae402e47aedfde,oh man if only i were in charge of the backed...,2021-11-16 15:42:37.506000+00:00
+6193d18329ddcd0293855af1,"no, you can't burn it to the ground. shame on you.",2021-11-16 15:42:59.636000+00:00
+6193d189fb8ca0572b24960f,ahahah,2021-11-16 15:43:05.142000+00:00
+6193d24e7db1e3753ea284f5,thanks a lot for your suggestions @keithlayne and @webstrand it's life saving :) indeed rebuilding a wannabe-alone of apollo-base-query is a struggling goal. i'll try my best to go on discord and help back the community whenever i can. ,2021-11-16 15:46:22.692000+00:00
+6193efbd2197144e84ca8ede,"well, discord is down",2021-11-16 17:51:57.537000+00:00
+619407303c0e2171724a7f62,"now, didn't notice",2021-11-16 19:32:00.891000+00:00
+6194075364b0d45a62bcb8c7,"specify web player went down around that time with some goose 404 page, cloud i guess?",2021-11-16 19:32:35.374000+00:00
+61941ae110df162945284f3a,"woohoo, and easy, specify, snapchat ... but they got it fixed fast. here you see the problem of cloud lock-in.",2021-11-16 20:56:01.861000+00:00
+61941b1664b0d45a62bce45b,this is why i love lurid.to ... serverless on any cloud. just love it.,2021-11-16 20:56:54.733000+00:00
+6194238064b0d45a62bcf79a,why do these companies gutta put so much rubbish between me and their product? it's like it's just a scar to harvest email,2021-11-16 21:32:48.657000+00:00
+619446547d63e6716aeca81a,"hi everyone i'm trying to create a customtransformer and i'm not sure how to emit an helper ""locally"", i.e. without repeating it once per module anyone knows where to find some documentation/examples about this? thanks in advance",2021-11-17 00:01:24.791000+00:00
+6195221a4e750b10a2c7c6e9,"hello there! i've a challenge i'm unable to solve i have the a union type, how do i get type of the values?",2021-11-17 15:39:06.803000+00:00
+61952a5b8b8103027214445b,distribute in the same was as your distributed key:,2021-11-17 16:14:19.907000+00:00
+61953161b480cc50de5ae437,org i knew it had to be something similar but couldn't come up with it thanks keith :d,2021-11-17 16:44:17.778000+00:00
+6195972ca9c8eb44c4e43a78,how can i achieve that a uniontype is type depending if an array contains a specific value? see here:,2021-11-17 23:58:36.359000+00:00
+61959826cd3f06175dbfdb62,is it even possible?,2021-11-18 00:02:46.629000+00:00
+6195986e197fa95a1c78e7dc,or do i need to write all permutations mentally?,2021-11-18 00:03:58.398000+00:00
+6195997d8853d31640ff89e1,ok using permutations type from here,2021-11-18 00:08:29.312000+00:00
+6195998a6104ea63b69f9255,or do we have a better solution in latest ?,2021-11-18 00:08:42.248000+00:00
+6195b999cdb5c1081a19a0a6,"from :  ""this is self-evidently a valid and well-defined type and any arguments to the contrary are fundamentally incorrect.""    can i just say how much i love ""any arguments to the contrary are fundamentally incorrect""?",2021-11-18 02:25:29.377000+00:00
+6195bae7cd3f06175dc018ce,call is alive,2021-11-18 02:31:03.394000+00:00
+6195bb45cdb5c1081a19a446,"@fatcerberus is on the case as well, glad to know you chaps are keeping the streets safe for to",2021-11-18 02:32:37.828000+00:00
+6195bb5142fc2863b213ae33,the reports of my death are greatly exaggerated.,2021-11-18 02:32:49.896000+00:00
+6195bb6eb5ba9e5a11c03c71,i'm not sure your whims can be fully appreciated amidst an attack of type-angry.,2021-11-18 02:33:18.269000+00:00
+6195bbe5a9c8eb44c4e47db2,"yeah, we really need a  soundness/completeness support group to help people get past the ideological purity that cannot survive being repeatedly dashed against the cliffs of traumatism.",2021-11-18 02:35:17.827000+00:00
+6195bbf663c1e83c95150af1,"too bad the his can't filter out all the ""bug: it doesn't work the way i want"" issues and autoclave.",2021-11-18 02:35:34.243000+00:00
+6195bc1676e3791755f00b83,"i have been known fall victim to ""i am obviously correct and anyone who disagrees is wrong"" also",2021-11-18 02:36:06.705000+00:00
+61829291d78911028a18cc9f,hi,2021-11-03 13:45:53.987000+00:00
+6182930eee6c260cf7590eb2,is there any approach in which a function return different types (attributes will be different),2021-11-03 13:47:58.037000+00:00
+6182bfd7d78911028a1939bd,consider signature overlooking,2021-11-03 16:59:03.316000+00:00
+618372d4fb3dcd4e88677783,how could i infer a table out of an array like this:,2021-11-04 05:42:44.119000+00:00
+6184040c3f09d8573653bc3e,"hi. i’ve got an interface that i’d like to convert to a class so i can attach methods to the instances. i’d like, though, to retain the interface. so i have . is unhappy with me, though, because i haven’t explicitly declared the interface members in the class declaration. is it possible to declare that the object “inherit” the interface’s properties?",2021-11-04 16:02:20.032000+00:00
+6184040f2197144e84a73b3a,thank you in advance!,2021-11-04 16:02:23.867000+00:00
+61840472cd4972068b89db83,"now, i’d like to do st like:",2021-11-04 16:04:02.302000+00:00
+6184048c29ddcd0293623818,… and still have “know” that is declared as in .,2021-11-04 16:04:28.359000+00:00
+618406bd29ddcd0293623e0d,there are some good things you got there,2021-11-04 16:13:49.342000+00:00
+6184070598c13e75501679a4,"but be aware that produces a) the construction, a value, named b) an interface named that is the instance type of the class",2021-11-04 16:15:01.716000+00:00
+61840719cd4972068b89e21c,and you can get the type of the construction with .,2021-11-04 16:15:21.981000+00:00
+6184074a9d20982e4ffe02ec,"so, the answer to your question is no.  you probably should just move the guns of your interface to the class and then delete it.",2021-11-04 16:16:10.512000+00:00
+61840a83d3ae402e478be386,"yeah that’s kind of what it feels like, “wanting bad things”.",2021-11-04 16:29:55.452000+00:00
+61840dcf2197144e84a74f38,"it's a common request though to not have to annette certain stuff in classes, this is in that class.",2021-11-04 16:43:59.188000+00:00
+618414e88c019f0d0b76af40,"that said, i do feel like i could division a use case for plain objects alongside a class that exposes the same properties as the plain-object interface.",2021-11-04 17:14:16.362000+00:00
+618415928c019f0d0b76b06a,"in the construction is mio a sign that you anna mix poor with classes and there are serializations issues, and a lot of people think that things will magically work, especially when they come from other languages",2021-11-04 17:17:06.312000+00:00
+6184159638377967f4921e73,"@keithlayne waitasec … is there a way to describe a plain object w/ interface , rather than an instance of the class ?",2021-11-04 17:17:10.036000+00:00
+618415968c019f0d0b76b075,"looking at you, c#",2021-11-04 17:17:10.276000+00:00
+618415ad9d20982e4ffe22b9,the interface includes any methods,2021-11-04 17:17:33.438000+00:00
+618415b4a41fd2069923a450,ah ok,2021-11-04 17:17:40.084000+00:00
+618415da3f09d8573653e302,a class without methods is interchangeable with poor of the same shape (and in reality objects that have the same methods),2021-11-04 17:18:18.161000+00:00
+618415fb3f09d8573653e351,i.e. structural tying means that you can never guarantee that which is a is actually .,2021-11-04 17:18:51.382000+00:00
+6184160029ddcd02936260e4,(i assume too == “plain-of’ is object”?),2021-11-04 17:18:56.007000+00:00
+61841603fb8ca0572b019075,up,2021-11-04 17:18:59.658000+00:00
+6184166b9d20982e4ffe2514,"so, what i have is an with various properties. i’d like to add a method, so i need to convert it to a class. that basically entails an object.assign construction, right?",2021-11-04 17:20:43.570000+00:00
+6184169ffb3dcd4e88690f37,"(… and made me bump into another annoyance, that it’s apparently not possible to do a selective spread-operator to get a specific list of object properties)",2021-11-04 17:21:35.991000+00:00
+618461253f09d85736548166,i have some code that is intentionally written to fail to type check so that i can test that my types are correct. is there a way to tell tic about this so that they don't come up as compile errors?,2021-11-04 22:39:33.360000+00:00
+618461962197144e84a8084f,or to make it a compile error only when they do type check?,2021-11-04 22:41:26.599000+00:00
+6184b47e98c13e755017f7e7,"i just discovered , which is exactly what i was looking for.",2021-11-05 04:35:10.546000+00:00
+61895fb5d3ae402e47986726,"i want to extend the things of mongoose.scheme.types but i can figure out, how. is there any tutoring for extending a namesake?",2021-11-08 17:34:45.674000+00:00
+61896066f2cedf67f9d2c3ae,does not get exported when i generate the things with its-bundle-generation. do i have to do an extra export somewhere?,2021-11-08 17:37:42.488000+00:00
+618967a49d20982e4f0ac9c8,"hello everyone, can anybody explain possible reasons why i get some  compile errors (a react pp) on my machine while my colleague does not ?",2021-11-08 18:08:36.146000+00:00
+618967beee6c260cf768f721,we have roughly the same versions for pretty much everything,2021-11-08 18:09:02.528000+00:00
+618967ce7db1e3753e8c3914,both of us are on line,2021-11-08 18:09:18.466000+00:00
+61896800a41fd2069930225c,i get errors such as,2021-11-08 18:10:08.716000+00:00
+6189681e9d20982e4f0acae2,"is there any way to get rid of or just ignore those errors, because the pp is working",2021-11-08 18:10:38.436000+00:00
+6189681f2197144e84b3e4b8,check strict null check in tsconfig,2021-11-08 18:10:39.544000+00:00
+618968479d20982e4f0acbb6,i disabled the strict mode but still,2021-11-08 18:11:19.499000+00:00
+6189685ed3ae402e47987a9b,"are there some global values set somewhere, i hope not",2021-11-08 18:11:42.558000+00:00
+6189688ccd4972068b969bfc,i guess global installation of  where  is maybe older at your friends pp,2021-11-08 18:12:28.582000+00:00
+6189689a2197144e84b3e5af,ha it could be,2021-11-08 18:12:42.910000+00:00
+61897b2b3f09d85736605f4a,i tried no luck unfortunately,2021-11-08 19:31:55.656000+00:00
+61897b528c019f0d0b836a1c,thanks though,2021-11-08 19:32:34.317000+00:00
+61897b5d8c019f0d0b836a3b,any other suggestion,2021-11-08 19:32:45.670000+00:00
+618993b698c13e7550238261,is there a way to make  accept to compile methods without argument types ?,2021-11-08 21:16:38.987000+00:00
+618a638fa41fd2069932acc3,"@zak905 if you enable ""implicitly"" and ""allowing"" it will.",2021-11-09 12:03:27.190000+00:00
+618a653fcd4972068b9923d2,ok thanks i am donna try,2021-11-09 12:10:39.079000+00:00
+618c46677db1e3753e92f34f,hi,2021-11-10 22:23:35.719000+00:00
+618c46717db1e3753e92f37d,i have a  problem,2021-11-10 22:23:45.266000+00:00
+618c46b59d20982e4f11a2fb,this is not recognized by score,2021-11-10 22:24:53.050000+00:00
+618c46c37db1e3753e92f438,and not jest,2021-11-10 22:25:07.649000+00:00
+618c47a0fb8ca0572b150695,the module in,2021-11-10 22:28:48.728000+00:00
+618c47b0f2cedf67f9d9ada5,when i add this file to,2021-11-10 22:29:04.733000+00:00
+618c47c28c019f0d0b8a14c0,"my jest test pick it up, but not score",2021-11-10 22:29:22.513000+00:00
+618c47d8cd4972068b9d8dad,"(see red line), how is that possible, doesn score use wat is defined in ?",2021-11-10 22:29:44.553000+00:00
+618c62c2d3ae402e479f872f,"very beginner question. i've got a javascript nodes project, and i just wanted to start adding some . i've started trying to do this just by reading one of the files to . but now it can't be resolved. these are the steps i've taken: run in my directory. added to the de dependencies in . i presume there's more to do?",2021-11-11 00:24:34.624000+00:00
+618faa9829ddcd02937ce0f6,why does  not throw error when passing variable of type to some function that needs a specific type?,2021-11-13 12:07:52.093000+00:00
+618fabb0fb8ca0572b1c2221,got my answer,2021-11-13 12:12:32.722000+00:00
+6191086ad3ae402e47a8ff64,"because it is any,this is design @solaris7x",2021-11-14 13:00:26.254000+00:00
+619166d9ee6c260cf77a6245,"for... reasons... i want to write, and use, files in a plain is project. like just as if they were from , but locally in my project. i can't for the life of me figure out how to make that work",2021-11-14 19:43:21.704000+00:00
+6192f23afb3dcd4e888a0b86,"hey all, i'm struggling to wrap my head around files and getting my declarations to ""just work"" project wide without the need to . i managed to realize that files can do this for me, but they break the minute you need to definitions from some other limb. my project uses shelter and their internal to build out some types for the project. how can i get around this?",2021-11-15 23:50:18.474000+00:00
+6192f4df7db1e3753ea0b89f,"putting your types in a d.to is not really a good idea.  put them in your to files and import them, and you will be happier.",2021-11-16 00:01:35.033000+00:00
+6192f86838377967f4b32c24,doing this: and referring to sveltecomponentdev as sveltecomponent is working for me,2021-11-16 00:16:40.537000+00:00
+619300c58c019f0d0b9819c3,"that's not what d.to files are for. if you put your types in d.to files instead of importing them from to files, it might work. it's not guaranteed to cause you pain. but if i'm a betting person, based on a lot of time spent around this topic with unhappy people, i'm donna bet on pain in your future.",2021-11-16 00:52:21.548000+00:00
+619300f57db1e3753ea0d0fd,"it's not ""because that's the right way to do it"" as much as ""because that's the path of least pain"".",2021-11-16 00:53:09.608000+00:00
+6193c51838377967f4b4dc49,"hi... i'm having a type problem with types which appears to be watching, but even with adding a type guard, i still can't get my tying to be correct :/",2021-11-16 14:50:00.660000+00:00
+6193c5299d20982e4f212cce,the types seems working but i can't get a function to output the given type.,2021-11-16 14:50:17.818000+00:00
+6193c5487db1e3753ea2696d,can you put a reproduction of the issue on the playground?,2021-11-16 14:50:48.539000+00:00
+6193c56129ddcd0293853fa3,here it is (in thread to avoid pollution),2021-11-16 14:51:13.552000+00:00
+6193c56f7db1e3753ea26a07,thanks @webstrand :),2021-11-16 14:51:27.104000+00:00
+6193c5b9ee6c260cf77f6273,it's part of a bigger piece of software but i limited the example to what's creating the issue.,2021-11-16 14:52:41.806000+00:00
+6193c5d49d20982e4f212e34,"you're running into an issue that could be an arbitrary type, like",2021-11-16 14:53:08.864000+00:00
+6193c5e1d3ae402e47aec647,type predicted work by intersecting the input type with the output type,2021-11-16 14:53:21.890000+00:00
+6193c5f529ddcd02938540b7,so you get an output type of,2021-11-16 14:53:41.312000+00:00
+6193c6118c019f0d0b99b5ab,"yeah i was wondering why, since the type guard is returning",2021-11-16 14:54:09.147000+00:00
+6193c617ee6c260cf77f63c6,"and since itself has no constraint,  believes that type could resolve to",2021-11-16 14:54:15.347000+00:00
+6193c61dee6c260cf77f63e1,which isn't an object type,2021-11-16 14:54:21.208000+00:00
+6193c646fb3dcd4e888bc62e,but wouldn't it be that the type guard's return type should be used instead of the intervention of ?,2021-11-16 14:55:02.639000+00:00
+6193c67cd3ae402e47aec7c7,i'm not sure what you mean? the type guard's return type is ?,2021-11-16 14:55:56.297000+00:00
+6193c695fb8ca0572b247d9e,"no i mean, the",2021-11-16 14:56:21.667000+00:00
+6193c6c23f09d8573676ae2d,type predicted work by narrowing the type of the input variable by the intervention of the input type and the output type,2021-11-16 14:57:06.142000+00:00
+6193c6d07db1e3753ea26c50,oooh -_- i thought it would force cast it,2021-11-16 14:57:20.101000+00:00
+6193c6d2f2cedf67f9e95593,hope,2021-11-16 14:57:22.635000+00:00
+6193c6e2a41fd206994676a7,"the can't be safely force cast, anyway",2021-11-16 14:57:38.955000+00:00
+6193c6f39d20982e4f2130e3,"most of the time, it's not an issue, since the input variable doesn't have a genetic type",2021-11-16 14:57:55.687000+00:00
+6193c6fc38377967f4b4e108,mmm indeed,2021-11-16 14:58:04.510000+00:00
+6193c719ee6c260cf77f6617,"here i'm trying to flatten the structure. basically ""if page do nothing, else wrap in { data }""",2021-11-16 14:58:33.122000+00:00
+6193c741d78911028a3f303c,just to end up with a normalized,2021-11-16 14:59:13.928000+00:00
+6193c75498c13e755039ac2d,"(i dont mean the union, but actually one or the other depending on the input type)",2021-11-16 14:59:32.365000+00:00
+6193c79bee6c260cf77f6839,"i'm getting out of ideas, would you have any pointer to a solution please @webstrand   ?",2021-11-16 15:00:43.432000+00:00
+6193c7a8ee6c260cf77f6841,(i actually struggled on this for few days),2021-11-16 15:00:56.524000+00:00
+6193c7b6fb3dcd4e888bca3a,"yeah, you can ease the portion of the narrowed type pretty safely",2021-11-16 15:01:10.936000+00:00
+6193c7d6d78911028a3f31da,"not 100% sure what type should be, but if that's wrong i'm sure you can figure it out",2021-11-16 15:01:42.794000+00:00
+6193c808fb3dcd4e888bcb17,"may i ask, what's the trick with the ?",2021-11-16 15:02:32.747000+00:00
+6193c80a98c13e755039ad90,threads suck,2021-11-16 15:02:34.271000+00:00
+6193c8207db1e3753ea26f65,"if is is turned on, that allows genetic functions to pause",2021-11-16 15:02:56.339000+00:00
+61742956fb8ca0572bdb4813,if is async then you have to instead,2021-10-23 15:25:10.685000+00:00
+61752a8cfb8ca0572bdda2d8,i fear he skipped a lot of step and need not an answer but one or multiple tutorials,2021-10-24 09:42:36.866000+00:00
+6175552b38377967f46e4773,@ericdrobinson a slightly less cumbersome way to workaround it could be to omit the type annexation on your war declaration. e.g.,2021-10-24 12:44:27.054000+00:00
+617607e838377967f4704b9c,"i'm looking for a way to restrict input parameter for a function to be specific field names of an object. the ""rule"" is that the should be of a type that i can filter out in some way. given this type: and this function: i'd like to ensure that the only input into the function allowed for ""field"" would be . any ideas on how i might add that constraint to the type of the parameter?",2021-10-25 01:27:04.491000+00:00
+617679d2d3ae402e476b33fc,"@ericdrobinson i'm assuming this function is to illustrate the type only, otherwise it looks like a very oddly written function indeed, but here (using a simple type until):",2021-10-25 09:33:06.346000+00:00
+61768ef338377967f4718bd7,and this is a way you could keep that function from knowing or daring about types other than the york prop,2021-10-25 11:03:15.561000+00:00
+6176c67d38377967f47212b7,okay i love this issue,2021-10-25 15:00:13.406000+00:00
+6176c739fb8ca0572be1ba33,"@salathielgenese that looks nice. i'm not sure if i like that it throws exceptions, i'd be happy if it resolved to just prior to initialization. what i really want is the once and only once initialization property.",2021-10-25 15:03:21.158000+00:00
+6176c7c0cd4972068b6a630c,"or a way to say ""this variable will never change again"", which might be even more useful for things like do traversed where is a common pattern",2021-10-25 15:05:36.113000+00:00
+6176ce8fee6c260cf73c80e6,"@call too many thieves and not enough...okay, i can't finish that sentence",2021-10-25 15:34:39.246000+00:00
+6176e9c2f2cedf67f9a6f53b,"yes @webstrand , dart modified works very well with . i'm not sure though, if that's a need well shared across is community to justify a proposal (i wouldn't bet on that). it may well go as a feature request to  project but they've been reluctant to add new keywords lately.",2021-10-25 17:30:42.733000+00:00
+617725b329ddcd02934382ba,i don't think we'd get it in is because enforcing exhaustiveness requires static analysis,2021-10-25 21:46:27.540000+00:00
+617725cdd78911028afd5e4a,unless it were to work like where if it's not exhaustive the function throws when it returns,2021-10-25 21:46:53.259000+00:00
+6177265398c13e7550f7b5f5,"@call yeah, i saw that one earlier. i mean yeah it is a ""problem"" in the sense of, maybe someone has a use case that requires pluralizing strings, but it's certainly not a tractable one",2021-10-25 21:49:07.730000+00:00
+617726f1cd4972068b6b4bed,"it seems like it ought to be possible, aren't so numerous that they couldn't be implements at the type level",2021-10-25 21:51:45.059000+00:00
+617727a2d78911028afd62d8,there's only one rule in there that isn't a suffer rule,2021-10-25 21:54:42.387000+00:00
+617734f998c13e7550f7d687,"but...we're just talking english now, right?",2021-10-25 22:51:37.436000+00:00
+6177a7d2cd4972068b6c9b88,"@fatcerberus  at the javascript level, the interpreter won't have to do static analysis. just to enforce that setter (or so to say/call-it) is called once and throws later if called. or, rather, the operation is impotent.",2021-10-26 07:01:38.930000+00:00
+6177a8aad3ae402e476e4cc2,"additional, throw an error if the variable is accessed in read mode before being assigned",2021-10-26 07:05:14.073000+00:00
+6177cfe03f09d8573636cdf7,"is it possible, somehow, to reference the actual value of an object field in a type genetic?",2021-10-26 09:52:32.847000+00:00
+6177d386d3ae402e476eb5cf,1./ the type of in your example is . so maybe you want to add to capture literal value as type 2./ consider generals for type at least...,2021-10-26 10:08:06.190000+00:00
+6177e6459d20982e4fe15d6f,"thank you again. after looking at it, it seems so straight-forward but firing it out on my own still sometimes flies over my head.",2021-10-26 11:28:05.604000+00:00
+6177fbd098c13e7550f9dff1,w,2021-10-26 13:00:00.487000+00:00
+6177fbd7d3ae402e476f1448,i guess we all have been there,2021-10-26 13:00:07.458000+00:00
+61797b833f09d857363b2e65,"ok fellow mrs, running into an interesting error when using and and then drilling into one particular parameter:",2021-10-27 16:17:07.062000+00:00
+61797ba4f2cedf67f9adb964,i cannot apparently assign the output of a method to the signature of the return type of a function i pass in?,2021-10-27 16:17:40.302000+00:00
+61797bbd7db1e3753e6724eb,i thought at the very least i'd get a laugh.  what do you guns think?,2021-10-27 16:18:05.830000+00:00
+61797beca41fd206990af84d,"is conditional, so unless the types match exactly,  won't let you do that when has an resolved genetic parameter",2021-10-27 16:18:52.319000+00:00
+61797c188c019f0d0b5da514,"works, though.",2021-10-27 16:19:36.398000+00:00
+61797c32a41fd206990af8cf,look at you with your bad self!  who!,2021-10-27 16:20:02.268000+00:00
+61797c558c019f0d0b5da5d5,now how do i account for the last line?,2021-10-27 16:20:37.306000+00:00
+61797d23d3ae402e47732d54,"there's some kind of logic error in your types, i'm not sure where it is.",2021-10-27 16:24:03.112000+00:00
+61797d542197144e848e5e87,blandly attempting to fix it indicates that the circular reference in is the issue fixes it,2021-10-27 16:24:52.607000+00:00
+61797d5bf2cedf67f9adbd3f,no idea if that's correct or not,2021-10-27 16:24:59.808000+00:00
+61797d988c019f0d0b5da7fc,the issue is that you're passing in your as of which is wrong as far as i can tell.,2021-10-27 16:26:00.611000+00:00
+61797e19d78911028a039d5d,"ty @webstrand , you have helped greatly!",2021-10-27 16:28:09.273000+00:00
+6179807a9d20982e4fe5a2ab,the fixed version thanks to @webstrand :,2021-10-27 16:38:18.686000+00:00
+6179ac617db1e3753e679d56,"i have a map of some large objects that i have given named types to, like this: currently gives: but i'd like it to look like it to instead just show the names, like this: is there any way to accomplish this?",2021-10-27 19:45:37.768000+00:00
+6179bba3f2cedf67f9ae50a9,seems to be opaque,2021-10-27 20:50:43.476000+00:00
+6179c3bdcd4972068b720447,@webstrand him. i think it might be due to the use of ? see in . but your comment helps; i guess i'm looking for a way to force a type to be opaque.,2021-10-27 21:25:17.185000+00:00
+6179ccb929ddcd02934a5b90,@nspaeth  consider this,2021-10-27 22:03:37.940000+00:00
+6179cd117db1e3753e67ea3b,complete test code on,2021-10-27 22:05:05.170000+00:00
+6179d23029ddcd02934a6729,"@salathielgenese that does the trick, thanks!",2021-10-27 22:26:56.428000+00:00
+6179d2bc9d20982e4fe66481,w,2021-10-27 22:29:16.325000+00:00
+6179d36e38377967f47a0d24,"it occurs to me that it would be nice to force collections to always show their member types as opaque, but to see individual instances as transparent. i suspect that the only way to do this using your method would be to make a then to mentally use some unpacking tying , but it would be nice if there were a way to make this the default behaviour.",2021-10-27 22:32:14.608000+00:00
+6179d5e0ee6c260cf744a13f," complex types do not work well with jetbrain's intellij, which always try to explode them",2021-10-27 22:42:40.904000+00:00
+6179d603d78911028a047345,"and beyond a certain level of resting, it just coerced everything to unknown",2021-10-27 22:43:15.065000+00:00
+6179d62938377967f47a12e8,but i think i'll go ahead and add your suggestion to @shall.to /types,2021-10-27 22:43:53.521000+00:00
+6179d660f2cedf67f9ae8cd6,"i use each+-language-server, which i think does the same. it might be a limitation of something they both use in common (-language-server, or observer)?",2021-10-27 22:44:48.250000+00:00
+6179da8f3f09d857363c0bfe,vs code do not behave that way,2021-10-27 23:02:39.639000+00:00
+6179df4ad3ae402e47741b4f,anyone have a nice clean way to do operative field copying of an object without  whining about things it doesn't understand? ...,2021-10-27 23:22:50.042000+00:00
+6179e0aa8c019f0d0b5e934b,what about,2021-10-27 23:28:42.355000+00:00
+6179e0f3cd4972068b724396,oooh. damn.,2021-10-27 23:29:55.137000+00:00
+6179e0f5fb8ca0572be9d11c,those are sick.,2021-10-27 23:29:57.861000+00:00
+6179e19b8c019f0d0b5e94dd,just saying... that will only copy innumerable members,2021-10-27 23:32:43.998000+00:00
+6179e1b63f09d857363c1879,"(well, same as the for-in loop)",2021-10-27 23:33:10.932000+00:00
+6179e1bb9d20982e4fe68391,and that's what the loops do!,2021-10-27 23:33:15.591000+00:00
+6179e1be3f09d857363c187e,hata up!,2021-10-27 23:33:18.465000+00:00
+6179e1cf98c13e7550fecda1,very nice. thanks for the suggestions!,2021-10-27 23:33:35.722000+00:00
+6179e1d48c019f0d0b5e9555,up,2021-10-27 23:33:40.203000+00:00
+617a5eebd3ae402e47753653,hi all,2021-10-28 08:27:23.444000+00:00
+617a70b5f2cedf67f9afde8c,i am creating a library and in one of the files it this,2021-10-28 09:43:17.022000+00:00
+617a7170fb8ca0572beb1bff,"when i use my library in another project the type of ""longer"" is any",2021-10-28 09:46:24.226000+00:00
+617a719f29ddcd02934bc7ce,"if i check the .d.to file it say that it can't find the ""bunyan"" type definition",2021-10-28 09:47:11.677000+00:00
+617a71bbd78911028a05c091,i don't want to import the types in the project that using my library,2021-10-28 09:47:39.409000+00:00
+617a74b1fb8ca0572beb241a,the project from which you import your library... does it also have as a dependency ? as well as its type definitions ?,2021-10-28 10:00:17.578000+00:00
+617a75aa9d20982e4fe7c8d2,no this is exactly what i prefer to avoid,2021-10-28 10:04:26.847000+00:00
+617a75b329ddcd02934bd17c,is it possible?,2021-10-28 10:04:35.468000+00:00
+617a75be98c13e75500018cd,"yes, it is",2021-10-28 10:04:46.806000+00:00
+617a75d28c019f0d0b5fe74b,how?,2021-10-28 10:05:06.258000+00:00
+617a75f8a41fd206990d343f,"your library list should have as a dependency, as well as its type definitions",2021-10-28 10:05:44.140000+00:00
+617a763e7db1e3753e69620e,if you're testing your library list locally (linking or unzipping)... consider running after unzipping/linking,2021-10-28 10:06:54.267000+00:00
+617a76578c019f0d0b5fe88e,re-running should trigger installation of transition dependencies,2021-10-28 10:07:19.978000+00:00
+617a76947db1e3753e696317,so you think i have to move @types /bryan from devdependecy to dependency in my library,2021-10-28 10:08:20.064000+00:00
+617a76b038377967f47b77f8,"oh, it was in de dependencies ? definitely yes",2021-10-28 10:08:48.445000+00:00
+617a8d35d3ae402e4775a607,"having a type: can i create a type, where the field say discriminatory is 'a', like this: but the value is bound to the end value? so if i renamed cost 'a' in somevalue, i would get a compile error?",2021-10-28 11:44:53.052000+00:00
+617a8e5a7db1e3753e699c2f,hey,2021-10-28 11:49:46.458000+00:00
+617a8e8bfb8ca0572beb6291,how can i tell that a specific array is of specific type to make side ok with the properties?,2021-10-28 11:50:35.741000+00:00
+617a8ec3a41fd206990d73e1,"i know that i'm dealing with filterpricecategory, which does have those two properties (minprice and caprice) from the type property",2021-10-28 11:51:31.111000+00:00
+617a8eeb9d20982e4fe805a7,jsdoc @type doesn't seem to overrule it either,2021-10-28 11:52:11.073000+00:00
+617a8f0bf2cedf67f9b0247a,is this just an issue with webster or should i resolve it with some other way?,2021-10-28 11:52:43.897000+00:00
+617ae1a5d3ae402e477697bf,@pihentagy ,2021-10-28 17:45:09.743000+00:00
+617b3ab3ee6c260cf748086c,is there a way to construct from a construct? example;,2021-10-29 00:05:07.838000+00:00
+617b477ccd4972068b75c69a,i get a cystic reference error for the above.,2021-10-29 00:59:40.418000+00:00
+617be51b98c13e7550039bd8,"i know this isn't possible right now but what stops  compilers from doing lookaheads for generals so that stuff like this would be possible: , basically it could scan the entire block for ""input"" and then apply the correct order of resolving. wouldn't that solve the issues people have when writing types for point-free up?",2021-10-29 12:12:11.642000+00:00
+617c19b6ee6c260cf74a0ce2,@mendrik that as a type probably makes no sense. but you can do what you're trying to do in to currently:,2021-10-29 15:56:38.893000+00:00
+617c19d48c019f0d0b641f5d,but that doesn't really answer your question.,2021-10-29 15:57:08.728000+00:00
+617c1a07fb8ca0572bef3ec1,what you're asking for is more a feature of,2021-10-29 15:57:59.862000+00:00
+617c1a6bf2cedf67f9b3fe0a,to answer your question (not that i can speak for the to team) i'd say it's mostly a matter of priorities and previous design decisions.,2021-10-29 15:59:39.362000+00:00
+617c1ac39d20982e4febc0ed,but right now in to that type is nonsensical.,2021-10-29 16:01:07.095000+00:00
+617cb0408c019f0d0b65688b,my suspicion is that to would need typeclasses or something like them to make that work,2021-10-30 02:38:56.082000+00:00
+617cb0687db1e3753e6ee3c6,you don't know whether meets the constraint or not until you've called the returned function/provided the second input,2021-10-30 02:39:36.582000+00:00
+617cb0afcd4972068b79042f,the fact that haskell (and i guess h-m in general) can even do things like that has always amazed me,2021-10-30 02:40:47.723000+00:00
+617d53d7d3ae402e477c605f,hello! i am struggling with in-built things that are not coming from an @types / packages but are included directly in the package (for example the firebase & firebaseui package). i can't get the compilers to pick them up. also vs code does not find them.  my tsconfig looks like this: i would try to import the packages like a normal package: has anyone an idea why it fails?,2021-10-30 14:16:55.708000+00:00
+618242e7fb8ca0572bfd5668,"hi! is there a way to do this somehow? for some reason to infer the genetic type as union, instead of the discrete value that is part of the union.",2021-11-03 08:05:59.369000+00:00
+6182545a98c13e7550128956,i have this error in my code for express types: ${publicpath}/static gives error: any ideas? it seems not to happen on my co workers machines,2021-11-03 09:20:26.017000+00:00
