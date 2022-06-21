@@ -1,0 +1,5 @@
+pandas
+textblob 
+requests 
+beautifulsoup4 
+spacy

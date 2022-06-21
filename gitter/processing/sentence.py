@@ -11,7 +11,7 @@ def apply_sentence_normalization(messages_df):
     re_express = re.compile(regex)
     messages_df['sentence'] = messages_df['sentence'].str.replace(re_express, '')
 
-    # transformando as strings vazias em NaN para poder remover utilizando a função dropna() do pandas
+    # transformando as strings vazias em NaN para poder remover utilizando a fun  o dropna() do pandas
     messages_df["sentence"].replace("", np.nan, inplace=True)
     messages_df.dropna(subset=["sentence"], inplace=True)
 
@@ -27,7 +27,7 @@ def apply_sentence_normalization(messages_df):
     return messages_df
 
 
-# aplicando correção ortográfica nas sentenças
+# aplicando corre  o ortogr fica nas senten as
 def correction(x):
     text = TextBlob(x)
     return "".join(text.correct())
