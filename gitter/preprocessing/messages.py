@@ -5,7 +5,6 @@ from copy import copy
 from bs4 import BeautifulSoup
 from textblob import TextBlob
 
-
 def remove_tags(html):
     soup = BeautifulSoup(html, "html.parser")
 
@@ -13,7 +12,6 @@ def remove_tags(html):
         data.decompose()
 
     return ' '.join(soup.stripped_strings)
-
 
 def process_messages(messages):
     copy_messages = copy(messages)
