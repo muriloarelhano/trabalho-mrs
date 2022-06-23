@@ -2,6 +2,6 @@
 
 Run:
 
-> !pip install pandas requests beautifulsoup4 textblob spacy
+> !pip install -r requirements.txt
 
 > !python -m textblob.download_corpora

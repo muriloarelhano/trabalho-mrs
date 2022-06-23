@@ -1,14 +1,12 @@
-from regex import P
 from gitter.processing.parallel import parallelize
+import pandas as pd
+import multiprocessing as mp
 
+from gitter.preprocessing.messages import apply_messages_pre_processing, process_messages
+from gitter.processing.sentence import apply_sentimental_analysis
+from gitter.scraper import GitterScraper
 
 if __name__ == '__main__':
-    import pandas as pd
-    import multiprocessing as mp
-
-    from gitter.preprocessing.messages import apply_messages_pre_processing, process_messages
-    from gitter.processing.sentence import apply_sentimental_analysis
-    from gitter.scraper import GitterScraper
 
     try:
         scraper = GitterScraper(
@@ -41,9 +39,9 @@ if __name__ == '__main__':
     # messages_df = pd.read_csv('./data/dataset.csv', )
     # print(messages_df.head(5))
 
-    print('Init apply_sentimental_analysis: ')
-    result_df = parallelize(messages_df, apply_sentimental_analysis, n_cpu)
+    # print('Init apply_sentimental_analysis: ')
+    # result_df = parallelize(messages_df, apply_sentimental_analysis, n_cpu)
 
-    result_df.to_csv('./data/result_dataset.csv', index=False)
+    # result_df.to_csv('./data/result_dataset.csv', index=False)
 
-    print(result_df.head(20))
+    # print(result_df.head(20))
