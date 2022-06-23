@@ -1,49 +1,45 @@
-# %%
-import pandas as pd
-from textblob import TextBlob
-from textblob.sentiments import NaiveBayesAnalyzer
+from email import message
+import numpy as np
 
-from gitter.messages import process_messages
-from gitter.processing.sentence import apply_sentence_correction, apply_sentence_normalization, remove_stop_words
-from gitter.scraper import GitterScraper
+from gitter.processing.parallel import parallelize
 
-try:
-    scraper = GitterScraper(
-        "62fe76c279230fbd70415c924fef5d1b26f1aec7", "555f74e315522ed4b3e0ce42"
-    )
-    messages = scraper.get_messages(100, 5000)
 
-except ValueError:
-    print(f'Error with gitter API')
+if __name__ == '__main__':
+    import pandas as pd
+    import multiprocessing as mp
 
-# %%
+    from gitter.preprocessing.messages import apply_messages_pre_processing, process_messages
+    from gitter.processing.sentence import apply_sentimental_analysis
+    from gitter.scraper import GitterScraper
 
-remove_columns = ["text", "status", "v", "editedAt",
-                  "threadMessageCount", "readBy", "unread"]
+    try:
+        scraper = GitterScraper(
+            "62fe76c279230fbd70415c924fef5d1b26f1aec7", "555f74e315522ed4b3e0ce42"
+        )
+        messages = scraper.get_messages(20, 20)
 
-messages_df = pd.DataFrame(process_messages(messages)).drop(
-    columns=remove_columns, errors="ignore")
-messages_df.rename(columns={'html': 'sentence'}, inplace=True)
+    except ValueError:
+        print(f'Error with gitter API')
 
-messages_df = apply_sentence_normalization(messages_df)
+    # Create Dataframe
+    remove_columns = ["text", "status", "v", "editedAt",
+                      "threadMessageCount", "readBy", "unread"]
 
-messages_df = apply_sentence_correction(messages_df)
+    messages_df = pd.DataFrame(process_messages(messages)).drop(
+        columns=remove_columns, errors="ignore")
 
-# messages_df['sentence'] = messages_df['sentence'].apply(remove_stop_words)
+    messages_df.rename(columns={'html': 'sentence'}, inplace=True)
 
-messages_df.reset_index(drop=True, inplace=True)
+    print(messages_df.head())
 
-messages_df.to_csv('./database.csv', index=False)
+    n_cpu = mp.cpu_count() - 1
 
-print(messages_df.head())
+    messages_df = parallelize(messages_df, apply_messages_pre_processing, n_cpu)
 
-#%%
+    # messages_df.to_csv('./dataset.csv', index=False)
 
-# for i, row in messages_df.iterrows():
-#     sentence = TextBlob(row["sentence"],  analyzer=NaiveBayesAnalyzer())
-#     messages_df.at[i, "sentiment"] = sentence.sentiment.classification
-#     messages_df.at[i, "pos"] = sentence.sentiment.p_pos
-#     messages_df.at[i, "neg"] = sentence.sentiment.p_neg
-#     print(messages_df.loc[i])
+    result_df = parallelize(messages_df, apply_sentimental_analysis, n_cpu)
 
-# print(messages_df.head())
+    result_df.to_csv('./result_dataset.csv', index=False)
+
+    print(result_df.head())

@@ -1,0 +1,16 @@
+id,sentence,sent,sentiment_label,sentiment,pos,neg
+629fdc6f7df86c141ec3e945,"that's probably a good thing since this channel is pretty much dead, the community moved to discord oh i didn't know that! i guess i should hunt that down ll",2022-06-07 23:17:03.474000+00:00,slightly_negative,neg,0.3192134668906711,0.6807865331093269
+62a1ccfa67db9a59db0e8b92,"how can i force  to use types from definitelytyped, and not the ones included in the package (acorn)?",2022-06-09 10:35:38.514000+00:00,slightly_positive,pos,0.8060053657215952,0.1939946342784052
+62a358b2e393a318064e122e,i thought there was a way to make this work...,2022-06-10 14:44:02.173000+00:00,neutral,neg,0.46675473684131374,0.5332452631586865
+62a38ef8deea5616bbef53b2,to doesn't infer type guards,2022-06-10 18:35:36.090000+00:00,neutral,pos,0.5096786758023304,0.4903213241976695
+62a38f7d4aa6c31dca4610b5,"oh i see, i was remembering use with actual type guards",2022-06-10 18:37:49.697000+00:00,slightly_positive,pos,0.8714064699060206,0.12859353009397995
+62a38faddb6f627d25c6e4cb,"yeah, if you already have a function or something that's declared as a type guard you can pass that to filter",2022-06-10 18:38:37+00:00,slightly_negative,neg,0.38543290837932537,0.6145670916206731
+62a458ecda330517ffbe9d1a,hello. i'm new to . i ask because there is only 1 error in 2 of the same code.,2022-06-11 08:57:16.869000+00:00,slightly_negative,neg,0.24625943860329544,0.753740561396705
+62a45d8f06a77e1e187f15d7,there is no repulsive code here.,2022-06-11 09:17:03.460000+00:00,slightly_negative,neg,0.32616306414067053,0.673836935859329
+62a4655ad126691416dfce45,"i think i found it. it seems to be a problem with the mongodb package, not a  problem. there is no error in .find, only updateone gives an error.",2022-06-11 09:50:18.718000+00:00,neutral,neg,0.4201905510667056,0.5798094489332952
+62a7510ec9382316a651b187,"hi everyone, i was watching and trying to delicate few things like , getting the following error cab: p.s.: those es-disabled are probably not useful here as i can't see splint in package",2022-06-13 15:00:30.842000+00:00,slightly_positive,pos,0.6497835849610901,0.35021641503891066
+62a769f5d126691416e5806a,is there a way to type hint something as being a static constant of a specific class? i imagine not but i thought it'd be worth asking in case anyone had an idea,2022-06-13 16:46:45.443000+00:00,slightly_negative,neg,0.39947963456893537,0.6005203654310666
+62a76be7d126691416e58527,"nevermind it was simple, just :d",2022-06-13 16:55:03.461000+00:00,slightly_negative,neg,0.3356484837988967,0.6643515162011033
+62ae0e9b8fe56a38b5a14e91,"hello, i wonder what is the proper way to define a string that could grow without any limit with ? thanks in advance",2022-06-18 17:42:51.394000+00:00,slightly_positive,pos,0.7782428137110172,0.22175718628898342
+62b393209f29d42bed8ec2e7,id argue the proper way is to not. don't make the compilers construct massive unions if at all possible. your compile times will thank you.,2022-06-22 22:09:36.526000+00:00,positive,pos,0.9588653518812159,0.041134648118786483
+62b3c727ef5ee44882bffcdf,"if the string can grow without limit then the compilers has to construct a union with an infinite number of possible strings, which is of course impossible",2022-06-23 01:51:35.462000+00:00,slightly_positive,pos,0.8381854579384409,0.16181454206155632

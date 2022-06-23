@@ -1,56 +1,31 @@
-import re
-import numpy as np
-import pandas as pd
 from textblob import TextBlob
-from spacy.lang.en import English
-from spacy.lang.en.stop_words import STOP_WORDS
-
-def apply_sentence_normalization(messages_df):
-    # removendo emojs com o formado :emoj:
-    regex = r':[^:\s]*(?:::[^:\s]*)*:'
-    re_express = re.compile(regex)
-    messages_df['sentence'] = messages_df['sentence'].str.replace(re_express, '')
-
-    # transformando as strings vazias em NaN para poder remover utilizando a fun  o dropna() do pandas
-    messages_df["sentence"].replace("", np.nan, inplace=True)
-    messages_df.dropna(subset=["sentence"], inplace=True)
-
-    # normalizando os dados
-    messages_df['sentence'] = messages_df['sentence'].str.lower()
-
-    # removendo a palavra que nomeia a room
-    messages_df['sentence'] = messages_df['sentence'].str.replace('typescript', '')
-
-    # convertendo ISO para Date
-    messages_df['sent'] = pd.to_datetime(messages_df['sent'])
-
-    return messages_df
+from textblob.sentiments import NaiveBayesAnalyzer
 
 
-# aplicando corre  o ortogr fica nas senten as
-def correction(x):
-    text = TextBlob(x)
-    return "".join(text.correct())
+def generate_sentiment_label(p_pos):
+    if p_pos >= 0.90:
+        return 'positive'
+    if p_pos >= 0.60 and p_pos < 0.90:
+        return 'slightly_positive'
+    if p_pos < 0.60 and p_pos >= 0.40:
+        return 'neutral'
+    if p_pos < 0.40 and p_pos > 0.10:
+        return 'slightly_negative'
+    if p_pos <= 0.10:
+        return 'negative'
 
-def apply_sentence_correction(messages_df):
-    messages_df['sentence'] = messages_df['sentence'].apply(correction)
-    return messages_df
 
+def apply_sentimental_analysis(df):
+    for i, row in df.iterrows():
 
-def remove_stop_words(text):
-    nlp = English()
+        sentence = TextBlob(df.at[i, "sentence"],
+                            analyzer=NaiveBayesAnalyzer())
 
-    my_doc = nlp(text)
+        df.at[i, "sentiment_label"] = generate_sentiment_label(
+            sentence.sentiment.p_pos)
 
-    token_list = []
-    for token in my_doc:
-        token_list.append(token.text)
+        df.at[i, "sentiment"] = sentence.sentiment.classification
+        df.at[i, "pos"] = sentence.sentiment.p_pos
+        df.at[i, "neg"] = sentence.sentiment.p_neg
 
-    filtered_sentence =[] 
-
-    for word in token_list:
-        lexeme = nlp.vocab[word]
-        if lexeme.is_stop == False:
-            filtered_sentence.append(word) 
-
-    return " ".join(filtered_sentence)
+    return df
