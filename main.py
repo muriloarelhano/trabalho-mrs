@@ -16,7 +16,7 @@ if __name__ == '__main__':
         scraper = GitterScraper(
             "62fe76c279230fbd70415c924fef5d1b26f1aec7", "555f74e315522ed4b3e0ce42"
         )
-        messages = scraper.get_messages(20, 20)
+        messages = scraper.get_messages(100, 100)
 
     except ValueError:
         print(f'Error with gitter API')
@@ -36,10 +36,10 @@ if __name__ == '__main__':
 
     messages_df = parallelize(messages_df, apply_messages_pre_processing, n_cpu)
 
-    # messages_df.to_csv('./dataset.csv', index=False)
+    # messages_df.to_csv('./data/dataset.csv', index=False)
 
     result_df = parallelize(messages_df, apply_sentimental_analysis, n_cpu)
 
-    result_df.to_csv('./result_dataset.csv', index=False)
+    result_df.to_csv('./data/result_dataset.csv', index=False)
 
     print(result_df.head())
