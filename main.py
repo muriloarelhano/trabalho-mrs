@@ -1,10 +1,10 @@
-from gitter.processing.parallel import parallelize
 import pandas as pd
 import multiprocessing as mp
+from gitter.scraper import GitterScraper 
+from gitter.processing.parallel import parallelize
 
 from gitter.preprocessing.messages import apply_messages_pre_processing, process_messages
 from gitter.processing.sentence import apply_sentimental_analysis
-from gitter.scraper import GitterScraper
 
 if __name__ == '__main__':
 
