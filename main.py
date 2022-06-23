@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     messages_df.rename(columns={'html': 'sentence'}, inplace=True)
 
-    print(messages_df.head())
+    print(messages_df.head(5))
 
     n_cpu = mp.cpu_count() - 1
 
@@ -37,10 +37,13 @@ if __name__ == '__main__':
         messages_df, apply_messages_pre_processing, n_cpu)
 
     # messages_df.to_csv('./data/dataset.csv', index=False)
-    
+
+    # messages_df = pd.read_csv('./data/dataset.csv', )
+    # print(messages_df.head(5))
+
     print('Init apply_sentimental_analysis: ')
     result_df = parallelize(messages_df, apply_sentimental_analysis, n_cpu)
 
-    # result_df.to_csv('./data/result_dataset.csv', index=False)
+    result_df.to_csv('./data/result_dataset.csv', index=False)
 
-    # print(result_df.head())
+    print(result_df.head(20))
