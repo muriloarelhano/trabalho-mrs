@@ -4,3 +4,5 @@ textblob
 requests 
 beautifulsoup4 
 spacy
+matplotlib
+sklearn 
